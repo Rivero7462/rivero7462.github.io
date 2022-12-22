@@ -1,22 +1,15 @@
-*{
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-    width: 100%;
-}
 .content{
-    height: 100vh;
+    height: 200vh;
     width: 100%;
-    background-image: url(../img1.png);
     background-size: cover;
     background-position: no-repeat;
-    transition: 5s;
+    transition: 1s;
 
     animation-name: animate;
-    animation-direction: alternate-reverse;
+    animation-direction:normal;
     animation-play-state: running;
     animation-timing-function: ease-in-out;
-    animation-duration: 30s;
+    animation-duration:15s;
     animation-fill-mode: forward;
     animation-iteration-count: infinite;
 }
@@ -31,7 +24,7 @@
         background-image: url(../img4.png);
     }
     60%{
-        background-image: url(../img5.png);
+        background-image: url(https://img.itch.zone/aW1nLzEwNzU5MDM4LnBuZw==/original/Zph7uX.png);
     }
     80%{
         background-image: url(../img6.png);
