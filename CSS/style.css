@@ -13,23 +13,106 @@
     animation-fill-mode: forward;
     animation-iteration-count: infinite;
 }
+
 @keyframes animate {
     0%{
-        background-image: url(../img2.png);
+        background-image: url(https://i.postimg.cc/MHrCZg1y/Sylvan.png);
     }
     20%{
-        background-image: url(../img3.png);
+        background-image: url(https://i.postimg.cc/T27Mc5Bp/Forest-Blockout.png);
     }
     40%{
-        background-image: url(../img4.png);
+        background-image: url(https://i.postimg.cc/nrz8Jn9F/Ganon.png);
     }
     60%{
         background-image: url(https://img.itch.zone/aW1nLzEwNzU5MDM4LnBuZw==/original/Zph7uX.png);
     }
     80%{
-        background-image: url(../img6.png);
+        background-image: url(https://img.itch.zone/aW1nLzEwNzU5MDM4LnBuZw==/original/Zph7uX.png);
     }
     100%{
-        background-image: url(../img1.png);
+        background-image: url(https://img.itch.zone/aW1nLzEwNzU5MDM4LnBuZw==/original/Zph7uX.png);
     }
+}
+
+.home{
+    background-image: url("https://i.postimg.cc/W1pFxGxv/Website-Background-basecolor1.png");
+}
+
+.games{
+    background-image: url("https://i.postimg.cc/QxJK644m/Website-Background-basecolor2.png");
+}
+
+.media{
+    background-image: url("https://i.postimg.cc/hv9QRpSS/Website-Background-basecolor3.png");
+}
+
+.about{
+    background-image: url("https://i.postimg.cc/GmM8RB1s/Website-Background-basecolor4.png");
+}
+
+.box{
+    inline-size: 850px;
+    overflow-wrap: normal;
+}
+
+redtext{
+    color: red;
+}
+
+whitetext{
+    color: white;
+}
+
+p{
+    font-family: acumin-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+
+    line-height: 35px;
+    padding-left: 250px;
+}
+
+header{
+    position:fixed;
+    background-color: black;
+    text-align:center;
+    top: 0px;
+    left:5%;
+    right:5%;
+    width: 90%;
+    height:50px;
+
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+  
+    border-left-color: white;
+    border-left-style: solid;
+    border-left-width: 4px;
+  
+    border-right-color: white;
+    border-right-style: solid;
+    border-right-width: 4px;
+}
+
+headertext{
+    font-family: acumin-pro, sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    color: white;
+    font-size: 25px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+h1{
+    font-family: acumin-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 80px;
+    color: white;
+
+    padding-left: 350px;
 }

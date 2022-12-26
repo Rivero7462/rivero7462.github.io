@@ -4,42 +4,32 @@
         <title>Alex Smith's Portfolio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="css/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
 
     </head>
-<body>
+<body class="home">
 
-    <!-- Header -->
-    <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
-        <img class="w3-image" src="https://www.w3schools.com/w3images/photographer.jpg" alt="Me" width="1500" height="600">
-        <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
-            <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">ALEX SMITH</h1>
-            <h5 class="w3-hide-large" style="white-space:nowrap">JANE MORGAN</h5>
-            <h3 class="w3-hide-medium w3-hide-small">Game Designer</h3>
-        </div>
+    <!-- Fixed Header -->
+    <header>
+        <a href="index.html">
+            <headertext>Home</headertext>
+        </a>
 
-        <!-- Navbar (placed at the bottom of the header image) -->
-        <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
-            <a href="#" class="w3-bar-item w3-button">Home</a>
-            <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
-            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-        </div>
+        <a href="games.html">
+            <headertext>Games</headertext>
+        </a>
+
+        <a href="media.html">
+            <headertext>Media</headertext>
+        </a>
+        
+        <a href="about.html">
+            <headertext>About</headertext>
+        </a>
     </header>
 
-    <!-- Navbar on small screens -->
-    <div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
-        <div class="w3-bar w3-light-grey">
-            <a href="#" class="w3-bar-item w3-button">Home</a>
-            <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
-            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-        </div>
-    </div>
-
-    
-    
-    
-    
+    <!-- Slideshow -->
     <div class="content"></div>
 
 
@@ -49,9 +39,9 @@
 
 
 
-    <!-- Links -->
-        <li class="nav-li"><a href="/about.html">About</a></li>
 
+
+    
     <!-- Page content -->
     <div style="padding:25px 0px 0px 50px;" id="portfolio">
 
@@ -59,53 +49,8 @@
         <img style="border-radius:15px 15px 0px 0px;" src="https://img.itch.zone/aW1nLzEwNzU5MDM4LnBuZw==/original/Zph7uX.png" alt="SheWantstoPlay" width="700">
         <div style="border:5px solid black;border-top:0;width:700px;height:100px;background-color:white;"> </div>
 
-        <!-- Contact -->
-        <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
-            <h3 class="w3-center">LET'S TALK!</h3>
-            <hr>
-            <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod
-                placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non
-                congue ullam corper. Praesent tincidunt sed tellus.</p>
-
-            <form action="/action_page.php" target="_blank">
-                <div class="w3-section">
-                    <label>Name</label>
-                    <input class="w3-input w3-border" type="text" required name="Name">
-                </div>
-                <div class="w3-section">
-                    <label>Email</label>
-                    <input class="w3-input w3-border" type="text" required name="Email">
-                </div>
-                <div class="w3-section">
-                    <label>Message</label>
-                    <input class="w3-input w3-border" required name="Message">
-                </div>
-                <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
-            </form><br>
-            <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
-            <footer class="w3-container w3-margin-top w3-light-grey w3-center w3-large">
-                <p class="w3-small">This website was made with W3schools Spaces. Make your own free website today!</p>
-                <a class="w3-button w3-round-xxlarge w3-small w3-dark-grey w3-margin-bottom" href="https://www.w3schools.com/spaces" target="_blank">Start now</a>
-             <!-- End footer. -->
-            </footer>
-
-        </div>
-
         <!-- End page content -->
     </div>
-
-    <div class="dropup">
-        <button class="dropbtn">More</button>
-        <div class="dropup-content">
-          <a href="/unitytips">Unity</a>
-          <a href="/unrealtips">Unreal</a>
-          <a href="/cons">Conventions</a>
-          <a href="/videostyles">Video Styles</a>
-          <a href="/bettervideos">Better Videos</a>
-          <a href="/island">Island</a>
-          <a href="/workhistory">Work History</a>
-        </div>
-      </div>
 
 </body>
 
