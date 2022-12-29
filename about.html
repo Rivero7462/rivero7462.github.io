@@ -24,128 +24,106 @@
             <a href="media.html">
                 <headertext>Media</headertext>
             </a>
-            
+
             <a href="about.html">
                 <headertext>About</headertext>
             </a>
     </header>
 
-    <!-- Picture -->
-    <img style="float:right; padding-top: 185px;" src="https://i.postimg.cc/wMf32bHM/Profile-Picture-No-Background.png" alt="Me">
+        <!-- About Me Text Section -->
+    <div style="height:1200px; display:flex;">
+        <div style="float:left;">
+            <h1>
+                <br>
+                    <whitetext>Who am I?</whitetext>
+                <br>
+            </h1>
 
-    <!-- About me description -->
-    <h1>
-        <br>
-            <whitetext>Who am I?</whitetext>
-        <br>
-    </h1>
+            <div class="box">
+                <p>
+                    <redtext>Hello! My name is Alex Smith.</redtext><br>
+                    <whitetext>I am a Game Designer who likes to focus
+                    on programming and game mechanics.
+                    I also have extensive experience in the other
+                    aspects of game design such as modeling, rigging,
+                    animation, texturing, and level design.</whitetext>
+                </p>
+            </div>
 
-    <div class="box">
-        <p>
-            <redtext>Hello! My name is Alex Smith.</redtext><br>
-            <whitetext>I am a Game Designer who likes to focus
-            on programming and game mechanics.
-            I also have extensive experience in the other
-            aspects of game design such as modeling, rigging,
-            animation, texturing, and level design.</whitetext>
-        </p>
-    </div>
+            <div class="box">
+                <p>
+                    <whitetext>I am currently creating games using
+                    Unreal Engine and learning how to use programs
+                    alongside it such as maya and substance.</whitetext>
+                </p>
+            </div>
 
-    <div class="box">
-        <p>
-            <whitetext>I am currently creating games using
-            Unreal Engine and learning how to use programs
-            alongside it such as maya and substance.</whitetext>
-        </p>
-    </div>
+            <div class="box">
+                <p>
+                    <redtext>EDUCATION:</redtext><br>
+                    <whitetext>BAA In Media Arts with a concentration
+                    in game design</whitetext>
+                </p>
+            </div>
 
-    <div class="box">
-        <p>
-            <redtext>EDUCATION:</redtext><br>
-            <whitetext>BAA In Media Arts with a concentration
-            in game design</whitetext>
-        </p>
-    </div>
+            <div class="box">
+                <p2 style="float:right; margin-right:50px;">
+                    <whitetext>C# and C++<br>
+                        Unity<br>
+                        Photoshop<br>
+                        Premiere Pro<br>
+                        After Effects</whitetext>
+                </p2>
 
-    <div class="box">
-        <p>
-            <redtext>SKILLS:</redtext><br>
-            <whitetext>Unreal
-                Maya
-                Github
-                Substance Painter
-                Substance Designer
-            
-                C# and C++
-                Unity
-                Photoshop
-                Premiere Pro
-                After Effects</whitetext>
-        </p>
+                <p>
+                    <redtext>SKILLS:</redtext><br>
+                    <whitetext>Unreal<br>
+                        Maya<br>
+                        Github<br>
+                        Substance Painter<br>
+                        Substance Designer</whitetext>
+                </p>
+            </div>
+        </div>
+
+        <div style="float:right">
+            <!-- Picture -->
+            <img class="profile-image" src="https://i.postimg.cc/wMf32bHM/Profile-Picture-No-Background.png" alt="Me">
+        </div>
     </div>
 
     <!-- Segment -->
-    <div style="width:100%;height:5px;background-color:white;"> </div>
+    <div class="segment"></div>
 
+    <!-- Contact -->
+    <h2>
+        <whitetext>LET'S TALK!</whitetext>
+    </h2>
 
+    <h3>
+        <whitetext>CONTACT ME HERE FOR FUTURE WORK AND PARTNERSHIPS</whitetext>
+    </h3>
 
+    <!-- Take to Email Button -->
+    <form action="mailto: ahujaannie3@gmail.com">
+        <h4><whitetext>Click To Send An E-mail</whitetext></h4>
+        <input type="submit" value="Send Email">
+    </form>
 
+    <!-- Send Email from Website -->
+    <form action="https://formsubmit.co/Rivero7462@gmail.com" method="POST"><br><br>
+        <input type="text" name="Name" placeholder="Full Name" required><br><br>
+        <input type="email" name="Email" placeholder="Email" required><br><br>
+        <textarea name="Subject" placeholder="Subject" required></textarea><br><br>
+        <textarea name="Message" placeholder="Message" required></textarea><br><br>
+        <button type="submit">Send</button>
+    </form>
 
+     <!-- End footer. -->
+    </footer>
 
-
-
-
-
-    <!-- Navbar on small screens -->
-    <div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
-        <div class="w3-bar w3-light-grey">
-            <a href="#" class="w3-bar-item w3-button">Home</a>
-            <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
-            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Contact -->
-        <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
-            <h3 class="w3-center">LET'S TALK!</h3>
-            <hr>
-            <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod
-                placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non
-                congue ullam corper. Praesent tincidunt sed tellus.</p>
-
-            <form action="/action_page.php" target="_blank">
-                <div class="w3-section">
-                    <label>Name</label>
-                    <input class="w3-input w3-border" type="text" required name="Name">
-                </div>
-                <div class="w3-section">
-                    <label>Email</label>
-                    <input class="w3-input w3-border" type="text" required name="Email">
-                </div>
-                <div class="w3-section">
-                    <label>Message</label>
-                    <input class="w3-input w3-border" required name="Message">
-                </div>
-                <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
-            </form><br>
-
-             <!-- End footer. -->
-            </footer>
-
-        </div>
-
+    
         <!-- End page content -->
-    </div>
 </body>
 
 </html>
