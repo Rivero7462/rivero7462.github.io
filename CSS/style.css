@@ -1,40 +1,132 @@
-.content{
-    width: 1920px;
-    height:1080px;
-    background-size: cover;
-    background-position: no-repeat;
-    transition: 1s;
+/*Backgrounds*/
+.home{
+    background-image:url("https://i.postimg.cc/W1pFxGxv/Website-Background-basecolor1.png");
+}
 
-    animation-name: animate;
+.games{
+    background-image:url("https://i.postimg.cc/QxJK644m/Website-Background-basecolor2.png");
+}
+
+.media{
+    background-image:url("https://i.postimg.cc/hv9QRpSS/Website-Background-basecolor3.png");
+}
+
+.about{
+    background-image:url("https://i.postimg.cc/GmM8RB1s/Website-Background-basecolor4.png");
+}
+
+/*Segment*/
+.segment{
+    width:100%;
+    height:5px;
+    background-color:white;
+}
+
+/*Float Left and Right*/
+.float-left{
+    float:left;
+}
+
+.float-right{
+    float:right;
+}
+
+/*Text*/
+acumin{
+    font-family:acumin-pro, sans-serif;
+    font-weight:600;
+    font-style:normal;
+    font-size:60px;
+
+    line-height:50px;
+}
+
+/*Text Position*/
+.centertext{
+    text-align:center;
+}
+
+/*Text Colors*/
+redtext{
+    color:red;
+}
+
+whitetext{
+    color:white;
+}
+
+/*Fixed Header*/
+header{
+    position:fixed;
+    background-color:black;
+    top:0px;
+    left:5%;
+    right:5%;
+    width:90%;
+    height:50px;
+
+    border-bottom-color:white;
+    border-bottom-style:solid;
+    border-bottom-width:4px;
+  
+    border-left-color:white;
+    border-left-style:solid;
+    border-left-width:4px;
+  
+    border-right-color:white;
+    border-right-style:solid;
+    border-right-width:4px;
+}
+
+headertext{
+    font-family:acumin-pro, sans-serif;
+    font-weight:600;
+    font-style:italic;
+    color:white;
+    font-size:25px;
+    padding-left:7%;
+    padding-right:7%;
+}
+
+/*Slideshow*/
+.content{
+    width:1920px;
+    height:1080px;
+    background-size:cover;
+    background-position:no-repeat;
+    transition:1s;
+
+    animation-name:animate;
     animation-direction:normal;
-    animation-play-state: running;
-    animation-timing-function: ease-in-out;
+    animation-play-state:running;
+    animation-timing-function:ease-in-out;
     animation-duration:15s;
-    animation-fill-mode: forward;
-    animation-iteration-count: infinite;
+    animation-fill-mode:forward;
+    animation-iteration-count:infinite;
 }
 
 @keyframes animate {
     0%{
-        background-image: url(https://i.postimg.cc/MHrCZg1y/Sylvan.png);
+        background-image:url(https://i.postimg.cc/MHrCZg1y/Sylvan.png);
     }
     20%{
-        background-image: url(https://i.postimg.cc/T27Mc5Bp/Forest-Blockout.png);
+        background-image:url(https://i.postimg.cc/T27Mc5Bp/Forest-Blockout.png);
     }
     40%{
-        background-image: url(https://i.postimg.cc/nrz8Jn9F/Ganon.png);
+        background-image:url(https://i.postimg.cc/nrz8Jn9F/Ganon.png);
     }
     60%{
-        background-image: url(https://img.itch.zone/aW1nLzEwNzU5MDM4LnBuZw==/original/Zph7uX.png);
+        background-image:url(https://img.itch.zone/aW1nLzEwNzU5MDM4LnBuZw==/original/Zph7uX.png);
     }
     80%{
-        background-image: url(https://img.itch.zone/aW1nLzEwNzU5MDM4LnBuZw==/original/Zph7uX.png);
+        background-image:url(https://img.itch.zone/aW1nLzEwNzU5MDM4LnBuZw==/original/Zph7uX.png);
     }
     100%{
-        background-image: url(https://img.itch.zone/aW1nLzEwNzU5MDM4LnBuZw==/original/Zph7uX.png);
+        background-image:url(https://img.itch.zone/aW1nLzEwNzU5MDM4LnBuZw==/original/Zph7uX.png);
     }
 }
 
+/*Logo info*/
 .logo-size{
     height:150px;
     width:150px;
@@ -52,180 +144,152 @@
     margin-top:50px;
 }
 
-.headerlogo{
-    text-align:center;
-}
-
+/*Home Games*/
 .gamebox{
     height:650px;
 }
 
 GameTitle{
-    font-family: acumin-pro, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 80px;
+    font-family:acumin-pro, sans-serif;
+    font-weight:600;
+    font-style:normal;
+    font-size:80px;
 
-    line-height: 80px;
+    line-height:80px;
 }
 
 GameDescription{
-    font-family: acumin-pro, sans-serif;
-    font-weight: 550;
-    font-style: normal;
-    font-size: 40px;
+    font-family:acumin-pro, sans-serif;
+    font-weight:550;
+    font-style:normal;
+    font-size:40px;
 
-    letter-spacing: 2px;
-    line-height: 35px;
+    letter-spacing:2px;
+    line-height:35px;
 }
 
-.game-text-left{
-    float:left;
+.game-text{
     margin-top:50px;
     inline-size:50%;
     overflow-wrap:normal;
-    padding-left: 2%;
-    padding-right: 2%;
-    text-align:center;
-}
-
-.game-text-right{
-    float:right;
-    margin-top:50px;
-    inline-size:50%;
-    overflow-wrap:normal;
-    padding-right: 2%;
-    padding-left: 2%;
+    padding-right:2%;
+    padding-left:2%;
     text-align:center;
 }
 
 .game-image-left{
-    float:left;
+    border-radius:0px 20px 20px 0px;
     width:50%;
     height:100%;
-    border-radius:0px 20px 20px 0px;
     display:flex;
 }
 
 .game-image-right{
-    float:right;
+    border-radius:20px 0px 0px 20px;
     width:50%;
     height:100%;
-    border-radius:20px 0px 0px 20px;
     display:flex;
 }
 
-.segment{
-    width:100%;
-    height:5px;
-    background-color:white;
+/*Game Image*/
+.game-row{
+    height:650px;
+    display:flex;
 }
 
-.home{
-    background-image: url("https://i.postimg.cc/W1pFxGxv/Website-Background-basecolor1.png");
+.game-distance-left{
+    padding-left:4%;
 }
 
-.games{
-    background-image: url("https://i.postimg.cc/QxJK644m/Website-Background-basecolor2.png");
+.game-distance-right{
+    padding-right:4%;
 }
 
-.media{
-    background-image: url("https://i.postimg.cc/hv9QRpSS/Website-Background-basecolor3.png");
+.game-image{
+    border-radius:50px 50px 0px 0px;
+    width:80%;
 }
 
-.about{
-    background-image: url("https://i.postimg.cc/GmM8RB1s/Website-Background-basecolor4.png");
+/*Border*/
+.border{
+    border:8px solid black;
 }
 
+/*Role Box*/
+.role-box{
+    border-top:0;
+    height:fit-content;
+    width:80%;
+    margin-left: 10%;
+    background-color:rgb(172, 255, 117);
+}
+
+roletext{
+    line-height:80px;
+}
+
+/*Created Box*/
+.created-box{
+    border-top:0;
+    height:fit-content;
+    width:80%;
+    margin-left: 10%;
+    background-color:rgb(255, 253, 125);
+}
+
+createdtext{
+    font-size:45px;
+    line-height:60px;
+}
+
+/*About*/
 .box{
-    inline-size: 900px;
-    overflow-wrap: normal;
-}
-
-redtext{
-    color: red;
-}
-
-whitetext{
-    color: white;
+    inline-size:900px;
+    overflow-wrap:normal;
 }
 
 p{
-    font-family: acumin-pro, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 30px;
+    font-family:acumin-pro, sans-serif;
+    font-weight:600;
+    font-style:normal;
+    font-size:30px;
 
-    line-height: 35px;
-    padding-left: 250px;
+    line-height:35px;
+    padding-left:250px;
 }
 
 p2{
-    font-family: acumin-pro, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 30px;
+    font-family:acumin-pro, sans-serif;
+    font-weight:600;
+    font-style:normal;
+    font-size:30px;
 
-    line-height: 35px;
-}
-
-header{
-    position:fixed;
-    background-color: black;
-    text-align:center;
-    top: 0px;
-    left:5%;
-    right:5%;
-    width: 90%;
-    height:50px;
-
-    border-bottom-color: white;
-    border-bottom-style: solid;
-    border-bottom-width: 4px;
-  
-    border-left-color: white;
-    border-left-style: solid;
-    border-left-width: 4px;
-  
-    border-right-color: white;
-    border-right-style: solid;
-    border-right-width: 4px;
-}
-
-headertext{
-    font-family: acumin-pro, sans-serif;
-    font-weight: 600;
-    font-style: italic;
-    color: white;
-    font-size: 25px;
-    padding-left: 7%;
-    padding-right: 7%;
+    line-height:35px;
 }
 
 h1{
-    font-family: acumin-pro, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 80px;
-    color: white;
+    font-family:acumin-pro, sans-serif;
+    font-weight:600;
+    font-style:normal;
+    font-size:80px;
 
-    padding-left: 350px;
+    padding-left:350px;
 }
 
 h2{
-    font-family: acumin-pro, sans-serif;
-    font-weight: 600;
-    font-style: italic;
-    font-size: 70px;
-    color: white;
+    font-family:acumin-pro, sans-serif;
+    font-weight:600;
+    font-style:italic;
+    font-size:70px;
+    color:white;
     text-align:center;
 }
 
 h3{
-    font-family: acumin-pro, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 30px;
+    font-family:acumin-pro, sans-serif;
+    font-weight:400;
+    font-style:normal;
+    font-size:30px;
 
     text-align:center;
 }
@@ -236,3 +300,76 @@ h3{
     padding-right:10%;
     display:flex;
 }
+
+.btn:hover{
+    background-color:lightgray;
+}
+
+.email-button{
+    height:fit-content;
+    width:fit-content;
+    border-radius:30px;
+
+    border-color:black;
+    border-style:solid;
+    border-width:10px;
+
+    font-family:acumin-pro, sans-serif;
+    font-weight:600;
+    font-style:normal;
+    font-size:40px;
+    color:black;
+    text-align:center;
+}
+
+.contact-name-email{
+    height:fit-content;
+    margin-left:2%;
+    margin-right:2%;
+
+    font-family:sans-serif;
+    font-weight:600;
+    font-style:normal;
+    font-size:30px;
+    color:black;
+}
+
+.contact-subject{
+    height:fit-content;
+
+    font-family:sans-serif;
+    font-weight:600;
+    font-style:normal;
+    font-size:30px;
+    color:black;
+}
+
+.contact-message{
+    height:500px;
+
+    font-family:sans-serif;
+    font-weight:400;
+    font-style:normal;
+    font-size:25px;
+    color:black;
+}
+
+footer{
+    background-color:black;
+    height:140px;
+    width:100%;
+}
+
+footer-text{
+    font-family:sans-serif;
+    font-weight:600;
+    font-style:normal;
+    font-size:30px;
+    padding-left:7%;
+    padding-right:7%;
+}
+
+/*Remove Repeat Fonts
+Remove repeat text-aligns
+rename generic names like p and others
+*/
