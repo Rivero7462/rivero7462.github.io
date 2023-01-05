@@ -6,4 +6,10 @@
 # http-server -c 1
 
 # About Section
-# Change about me border height: "<div style="height:1200px; display:flex;">"
+
+
+
+# Final
+# Fix Index icons scaling
+# Buttons and Correct photos
+#

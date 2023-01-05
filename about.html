@@ -13,82 +13,94 @@
 
     <!-- Fixed Header -->
     <header class="centertext">
-        <a href="index">
+        <a href="/index.html">
             <headertext>Home</headertext>
         </a>
 
-        <a href="games">
+        <a href="/games.html">
             <headertext>Games</headertext>
         </a>
 
-        <a href="media">
+        <a href="/media.html">
             <headertext>Media</headertext>
         </a>
 
-        <a href="about">
+        <a href="/about.html">
             <headertext>About</headertext>
         </a>
     </header>
 
         <!-- About Me Text Section -->
-    <div style="height:1200px; display:flex;">
-        <div style="float:left;">
+    <div style="height:100%; display:flex;">
+        <!-- Text -->
+        <div style="width:80%;">
             <h1>
                 <br>
                     <whitetext>Who am I?</whitetext>
                 <br>
             </h1>
 
-            <div class="box">
-                <p>
+            <div class="about-box">
+                <div class="about-text">
+                    <br>
                     <redtext>Hello! My name is Alex Smith.</redtext><br>
                     <whitetext>I am a Game Designer who likes to focus
                     on programming and game mechanics.
                     I also have extensive experience in the other
                     aspects of game design such as modeling, rigging,
                     animation, texturing, and level design.</whitetext>
-                </p>
-            </div>
 
-            <div class="box">
-                <p>
+                    <br>
+                    <br>
+
                     <whitetext>I am currently creating games using
                     Unreal Engine and learning how to use programs
                     alongside it such as maya and substance.</whitetext>
-                </p>
-            </div>
 
-            <div class="box">
-                <p>
+                    <br>
+                    <br>
+
                     <redtext>EDUCATION:</redtext><br>
                     <whitetext>BAA In Media Arts with a concentration
                     in game design</whitetext>
-                </p>
-            </div>
 
-            <div class="box">
-                <p2 style="float:right; margin-right:50px;">
-                    <whitetext>C# and C++<br>
-                        Unity<br>
-                        Photoshop<br>
-                        Premiere Pro<br>
-                        After Effects</whitetext>
-                </p2>
+                    <br>
+                    <br>
+                </div>
 
-                <p>
-                    <redtext>SKILLS:</redtext><br>
-                    <whitetext>Unreal<br>
-                        Maya<br>
-                        Github<br>
-                        Substance Painter<br>
-                        Substance Designer</whitetext>
-                </p>
+                <!--Skills-->
+                <div class="skills-tab">
+                    <div style="padding-right:5%; word-break: keep-all;" class="float-left">
+                        <redtext>SKILLS:</redtext><br>
+                        <whitetext>
+                            Unreal<br>
+                            Maya<br>
+                            Github<br>
+                            Substance Painter<br>
+                            Substance Designer
+                        </whitetext>
+
+                        <br>
+                    </div>
+
+                    <br>
+                    <div>
+                        <whitetext>
+                            C# and C++<br>
+                            Unity<br>
+                            Photoshop<br>
+                            Premiere Pro<br>
+                            After Effects
+                        </whitetext>
+                    </div>
+                </div>
+                <br>
+                <br>
             </div>
         </div>
-
-        <div style="float:right">
+        <div class="game-image centertext">
             <!-- Picture -->
-            <img class="profile-image" src="https://i.postimg.cc/wMf32bHM/Profile-Picture-No-Background.png" alt="Me">
+            <img class="profile-image " src="https://i.postimg.cc/wMf32bHM/Profile-Picture-No-Background.png" alt="Me">
         </div>
     </div>
 
@@ -96,11 +108,11 @@
     <div class="segment"></div>
 
     <!-- Contact -->
-    <h2>
+    <h2 class="centertext">
         <whitetext>LET'S TALK!</whitetext>
     </h2>
 
-    <h3>
+    <h3 class="centertext">
         <whitetext>CONTACT ME HERE FOR FUTURE WORK AND PARTNERSHIPS</whitetext>
     </h3>
 
@@ -108,10 +120,11 @@
     <div class="centertext">
         <form action="mailto:Rivero7462@gmail.com">
             <br>
+
             <input class="email-button btn" type="submit" value="     Rivero7462@gmail.com     ">
         </form>
 
-    <h2>
+    <h2 class="centertext">
         <whitetext>Or</whitetext>
     </h2>
 
@@ -126,7 +139,6 @@
         <form action="https://formsubmit.co/Rivero7462@gmail.com" method="POST">
 
         <div>
-
             <input class="contact-name-email centertext" style="border-radius:10px;" type="text" name="Name" placeholder="Name" required>
 
             <input class="contact-name-email centertext" style="border-radius:10px;" type="email" name="Email" placeholder="Email" required>
@@ -135,12 +147,6 @@
             <br>
             <br>
             <br>
-
-
-
-
-
-
 
             <div class="contact-subject centertext">
                 <input style="width:100%; inline-size:50%; border-radius:10px;" name="Subject" placeholder="Subject" required></textarea>
@@ -182,7 +188,7 @@
             </footer-text>
         </a>
         
-        <a href="about" link>
+        <a href="/about.html">
             <footer-text class="float-right">
                 <whitetext>Back to Top</whitetext>
             </footer-text>

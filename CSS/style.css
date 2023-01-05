@@ -131,68 +131,68 @@ headertext{
 
 @keyframes animate{
     0%{
-        background-image:url(https://i.postimg.cc/MHrCZg1y/Sylvan.png);
+        background-image:url(https://i.postimg.cc/L5D53QWv/Sylvan.png);
     }
     14%{
-        background-image:url(https://i.postimg.cc/MHrCZg1y/Sylvan.png);
+        background-image:url(https://i.postimg.cc/L5D53QWv/Sylvan.png);
     }
 
     16.66666%{
-        background-image:url(https://i.postimg.cc/T27Mc5Bp/Forest-Blockout.png);
+        background-image:url(https://i.postimg.cc/SsWJJx7B/Ganon.png);
     }
     31%{
-        background-image:url(https://i.postimg.cc/T27Mc5Bp/Forest-Blockout.png);
+        background-image:url(https://i.postimg.cc/SsWJJx7B/Ganon.png);
 
     }
     33.33333%{
-        background-image:url(https://i.postimg.cc/nrz8Jn9F/Ganon.png);
+        background-image:url(https://i.postimg.cc/2yr3vN0V/Forest-Blockout.png);
     }
     48%{
-        background-image:url(https://i.postimg.cc/nrz8Jn9F/Ganon.png);
+        background-image:url(https://i.postimg.cc/2yr3vN0V/Forest-Blockout.png);
     }
 
     50%{
-        background-image:url(https://i.postimg.cc/T27Mc5Bp/Forest-Blockout.png);
+        background-image:url(https://i.postimg.cc/hjFXDdx8/Gem-Shield.png);
     }
     64%{
-        background-image:url(https://i.postimg.cc/T27Mc5Bp/Forest-Blockout.png);
+        background-image:url(https://i.postimg.cc/hjFXDdx8/Gem-Shield.png);
     }
 
     66.66666%{
-        background-image:url(https://i.postimg.cc/nrz8Jn9F/Ganon.png);
+        background-image:url(https://i.postimg.cc/KcD1b4YL/She-Wants-to-Play.png);
     }
     81%{
-        background-image:url(https://i.postimg.cc/nrz8Jn9F/Ganon.png);
+        background-image:url(https://i.postimg.cc/KcD1b4YL/She-Wants-to-Play.png);
     }
 
     83.33333%{
-        background-image:url(https://i.postimg.cc/T27Mc5Bp/Forest-Blockout.png);
+        background-image:url(https://i.postimg.cc/jjnWYXWd/Vine-Grapple.png);
     }
     98%{
-        background-image:url(https://i.postimg.cc/T27Mc5Bp/Forest-Blockout.png);
+        background-image:url(https://i.postimg.cc/jjnWYXWd/Vine-Grapple.png);
     }
 
     100%{
-        background-image:url(https://i.postimg.cc/MHrCZg1y/Sylvan.png);
+        background-image:url(https://i.postimg.cc/L5D53QWv/Sylvan.png);
     }
 }
 
 /*Logo info*/
 .logo-size{
-    height:150px;
-    width:150px;
+    height:15vh;
+    width:15vh;
     margin-left:1%;
     margin-right:1%;
 }
 
 .logooffsettop{
-    margin-top:200px;
-    margin-bottom:50px;
+    margin-top:8%;
+    margin-bottom:2%;
 }
 
 .logooffsetbottom{
-    margin-bottom:200px;
-    margin-top:50px;
+    margin-bottom:8%;
+    margin-top:2%;
 }
 
 /*Home Games*/
@@ -216,7 +216,7 @@ GameDescription{
     font-size:40px;
 
     letter-spacing:2px;
-    line-height:35px;
+    line-height:45px;
 }
 
 .game-text{
@@ -225,7 +225,6 @@ GameDescription{
     overflow-wrap:normal;
     padding-right:2%;
     padding-left:2%;
-    text-align:center;
 }
 
 .game-image-left{
@@ -235,6 +234,8 @@ GameDescription{
     display:flex;
     max-height:650px;
     max-width:951px;
+    border:8px solid black;
+    border-left:0;
 }
 
 .game-image-right{
@@ -244,25 +245,25 @@ GameDescription{
     display:flex;
     max-height:650px;
     max-width:951px;
+    border:8px solid black;
+    border-right:0;
 }
 
 /*Game Image*/
 .game-row{
-    height:650px;
+    height:fit-content;
     display:flex;
 }
 
-.game-distance-left{
-    padding-left:4%;
-}
-
-.game-distance-right{
-    padding-right:4%;
+.game-distance{
+    margin-left:4%;
+    margin-right:4%;
+    inline-size:50%;
 }
 
 .game-image{
     border-radius:50px 50px 0px 0px;
-    width:80%;
+    width:100%;
 }
 
 /*Border*/
@@ -273,11 +274,8 @@ GameDescription{
 /*Role Box*/
 .role-box{
     font-size:60px;
-
     border-top:0;
     height:fit-content;
-    width:80%;
-    margin-left: 10%;
     background-color:rgb(172, 255, 117);
 }
 
@@ -289,8 +287,6 @@ roletext{
 .created-box{
     border-top:0;
     height:fit-content;
-    width:80%;
-    margin-left: 10%;
     background-color:rgb(255, 253, 125);
 }
 
@@ -326,12 +322,11 @@ createdtext{
 }
 
 /*About*/
-.box{
-    inline-size:900px;
+.about-box{
     overflow-wrap:normal;
 }
 
-p{
+.about-text{
     font-family:acumin-pro, sans-serif;
     font-weight:600;
     font-style:normal;
@@ -341,13 +336,14 @@ p{
     padding-left:250px;
 }
 
-p2{
+.skills-tab{
     font-family:acumin-pro, sans-serif;
     font-weight:600;
     font-style:normal;
     font-size:30px;
 
     line-height:35px;
+    padding-left:250px;
 }
 
 h1{
@@ -355,7 +351,6 @@ h1{
     font-weight:600;
     font-style:normal;
     font-size:80px;
-
     padding-left:350px;
 }
 
@@ -365,7 +360,6 @@ h2{
     font-style:italic;
     font-size:70px;
     color:white;
-    text-align:center;
 }
 
 h3{
@@ -373,15 +367,12 @@ h3{
     font-weight:400;
     font-style:normal;
     font-size:30px;
-
-    text-align:center;
 }
 
 .profile-image{
     padding-top:10%;
     height:100%;
     padding-right:10%;
-    display:flex;
 }
 
 .btn:hover{
@@ -402,7 +393,6 @@ h3{
     font-style:normal;
     font-size:40px;
     color:black;
-    text-align:center;
 }
 
 .contact-name-email{
@@ -451,8 +441,3 @@ footer-text{
     padding-left:7%;
     padding-right:7%;
 }
-
-/*Remove Repeat Fonts
-Remove repeat text-aligns
-rename generic names like p and others
-*/
