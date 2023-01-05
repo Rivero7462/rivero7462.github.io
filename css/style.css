@@ -1,0 +1,443 @@
+/*Backgrounds*/
+.home{
+    background-image:url("https://i.postimg.cc/W1pFxGxv/Website-Background-basecolor1.png");
+}
+
+.games{
+    background-image:url("https://i.postimg.cc/QxJK644m/Website-Background-basecolor2.png");
+}
+
+.media{
+    background-image:url("https://i.postimg.cc/hv9QRpSS/Website-Background-basecolor3.png");
+}
+
+.about{
+    background-image:url("https://i.postimg.cc/GmM8RB1s/Website-Background-basecolor4.png");
+}
+
+/*Segment*/
+.segment{
+    width:100%;
+    height:5px;
+    background-color:white;
+}
+
+/*Float Left and Right*/
+.float-left{
+    float:left;
+}
+
+.float-right{
+    float:right;
+}
+
+/*Text*/
+acumin{
+    font-family:acumin-pro, sans-serif;
+    font-weight:600;
+    line-height:50px;
+}
+
+font40{
+    font-size:40px;
+}
+
+italics{
+    font-style:italic;
+}
+
+/*Text Position*/
+.centertext{
+    text-align:center;
+}
+
+/*Text Colors*/
+redtext{
+    color:red;
+}
+
+whitetext{
+    color:white;
+}
+
+/*Fixed Header*/
+header{
+    position:fixed;
+    background-color:black;
+    top:0px;
+    left:5%;
+    right:5%;
+    width:90%;
+    height:50px;
+
+    border-bottom-color:white;
+    border-bottom-style:solid;
+    border-bottom-width:4px;
+  
+    border-left-color:white;
+    border-left-style:solid;
+    border-left-width:4px;
+  
+    border-right-color:white;
+    border-right-style:solid;
+    border-right-width:4px;
+}
+
+headertext{
+    font-family:acumin-pro, sans-serif;
+    font-weight:600;
+    font-style:italic;
+    color:white;
+    font-size:25px;
+    padding-left:7%;
+    padding-right:7%;
+}
+
+/*Slideshow Name*/
+.slideshow-name{
+    font-size:120px;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color:black;
+
+    padding-top:5%;
+    padding-left:5%;
+}
+
+/*Slideshow Occupation*/
+.slideshow-occupation{
+    font-size:65px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color:black;
+
+    padding-left:10%;
+}
+
+/*Slideshow*/
+.slideshow{
+    width:100%;
+    height:100vh;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    animation-name:animate;
+    animation-direction:normal;
+    animation-play-state:running;
+    animation-timing-function:ease-in-out;
+    animation-duration:20s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-image:url(https://i.postimg.cc/L5D53QWv/Sylvan.png);
+    }
+    14%{
+        background-image:url(https://i.postimg.cc/L5D53QWv/Sylvan.png);
+    }
+
+    16.66666%{
+        background-image:url(https://i.postimg.cc/SsWJJx7B/Ganon.png);
+    }
+    31%{
+        background-image:url(https://i.postimg.cc/SsWJJx7B/Ganon.png);
+
+    }
+    33.33333%{
+        background-image:url(https://i.postimg.cc/2yr3vN0V/Forest-Blockout.png);
+    }
+    48%{
+        background-image:url(https://i.postimg.cc/2yr3vN0V/Forest-Blockout.png);
+    }
+
+    50%{
+        background-image:url(https://i.postimg.cc/hjFXDdx8/Gem-Shield.png);
+    }
+    64%{
+        background-image:url(https://i.postimg.cc/hjFXDdx8/Gem-Shield.png);
+    }
+
+    66.66666%{
+        background-image:url(https://i.postimg.cc/KcD1b4YL/She-Wants-to-Play.png);
+    }
+    81%{
+        background-image:url(https://i.postimg.cc/KcD1b4YL/She-Wants-to-Play.png);
+    }
+
+    83.33333%{
+        background-image:url(https://i.postimg.cc/jjnWYXWd/Vine-Grapple.png);
+    }
+    98%{
+        background-image:url(https://i.postimg.cc/jjnWYXWd/Vine-Grapple.png);
+    }
+
+    100%{
+        background-image:url(https://i.postimg.cc/L5D53QWv/Sylvan.png);
+    }
+}
+
+/*Logo info*/
+.logo-size{
+    height:15vh;
+    width:15vh;
+    margin-left:1%;
+    margin-right:1%;
+}
+
+.logooffsettop{
+    margin-top:8%;
+    margin-bottom:2%;
+}
+
+.logooffsetbottom{
+    margin-bottom:8%;
+    margin-top:2%;
+}
+
+/*Home Games*/
+.gamebox{
+    height:650px;
+}
+
+GameTitle{
+    font-family:acumin-pro, sans-serif;
+    font-weight:600;
+    font-style:normal;
+    font-size:80px;
+
+    line-height:80px;
+}
+
+GameDescription{
+    font-family:acumin-pro, sans-serif;
+    font-weight:550;
+    font-style:normal;
+    font-size:40px;
+
+    letter-spacing:2px;
+    line-height:45px;
+}
+
+.game-text{
+    margin-top:50px;
+    inline-size:50%;
+    overflow-wrap:normal;
+    padding-right:2%;
+    padding-left:2%;
+}
+
+.game-image-left{
+    border-radius:0px 20px 20px 0px;
+    width:50%;
+    height:100%;
+    display:flex;
+    max-height:650px;
+    max-width:951px;
+    border:8px solid black;
+    border-left:0;
+}
+
+.game-image-right{
+    border-radius:20px 0px 0px 20px;
+    width:50%;
+    height:100%;
+    display:flex;
+    max-height:650px;
+    max-width:951px;
+    border:8px solid black;
+    border-right:0;
+}
+
+/*Game Image*/
+.game-row{
+    height:fit-content;
+    display:flex;
+}
+
+.game-distance{
+    margin-left:4%;
+    margin-right:4%;
+    inline-size:50%;
+}
+
+.game-image{
+    border-radius:50px 50px 0px 0px;
+    width:100%;
+}
+
+/*Border*/
+.border{
+    border:8px solid black;
+}
+
+/*Role Box*/
+.role-box{
+    font-size:60px;
+    border-top:0;
+    height:fit-content;
+    background-color:rgb(172, 255, 117);
+}
+
+roletext{
+    line-height:80px;
+}
+
+/*Created Box*/
+.created-box{
+    border-top:0;
+    height:fit-content;
+    background-color:rgb(255, 253, 125);
+}
+
+createdtext{
+    font-size:45px;
+    line-height:60px;
+}
+
+/*Media*/
+.media-text{
+    font-size:60px;
+}
+
+.youtube-image{
+    inline-size:50%;
+    height:100%;
+    display:flex;
+
+    max-height:650px;
+    max-width:951px;
+}
+
+.youtube-text{
+    font-family:acumin-pro, sans-serif;
+    font-weight:550;
+    font-style:normal;
+    font-size:40px;
+
+    padding-right:5%;
+
+    letter-spacing:2px;
+    line-height:35px;
+}
+
+/*About*/
+.about-box{
+    overflow-wrap:normal;
+}
+
+.about-text{
+    font-family:acumin-pro, sans-serif;
+    font-weight:600;
+    font-style:normal;
+    font-size:30px;
+
+    line-height:35px;
+    padding-left:250px;
+}
+
+.skills-tab{
+    font-family:acumin-pro, sans-serif;
+    font-weight:600;
+    font-style:normal;
+    font-size:30px;
+
+    line-height:35px;
+    padding-left:250px;
+}
+
+h1{
+    font-family:acumin-pro, sans-serif;
+    font-weight:600;
+    font-style:normal;
+    font-size:80px;
+    padding-left:350px;
+}
+
+h2{
+    font-family:acumin-pro, sans-serif;
+    font-weight:600;
+    font-style:italic;
+    font-size:70px;
+    color:white;
+}
+
+h3{
+    font-family:acumin-pro, sans-serif;
+    font-weight:400;
+    font-style:normal;
+    font-size:30px;
+}
+
+.profile-image{
+    padding-top:10%;
+    height:100%;
+    padding-right:10%;
+}
+
+.btn:hover{
+    background-color:lightgray;
+}
+
+.email-button{
+    height:fit-content;
+    width:fit-content;
+    border-radius:30px;
+
+    border-color:black;
+    border-style:solid;
+    border-width:10px;
+
+    font-family:acumin-pro, sans-serif;
+    font-weight:600;
+    font-style:normal;
+    font-size:40px;
+    color:black;
+}
+
+.contact-name-email{
+    height:fit-content;
+    margin-left:2%;
+    margin-right:2%;
+
+    font-family:sans-serif;
+    font-weight:600;
+    font-style:normal;
+    font-size:30px;
+    color:black;
+}
+
+.contact-subject{
+    height:fit-content;
+
+    font-family:sans-serif;
+    font-weight:600;
+    font-style:normal;
+    font-size:30px;
+    color:black;
+}
+
+.contact-message{
+    height:500px;
+
+    font-family:sans-serif;
+    font-weight:400;
+    font-style:normal;
+    font-size:25px;
+    color:black;
+}
+
+footer{
+    background-color:black;
+    height:140px;
+    width:100%;
+}
+
+footer-text{
+    font-family:sans-serif;
+    font-weight:600;
+    font-style:normal;
+    font-size:30px;
+    padding-left:7%;
+    padding-right:7%;
+}
