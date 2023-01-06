@@ -1,18 +1,18 @@
 /*Backgrounds*/
 .home{
-    background-image:url("https://i.postimg.cc/W1pFxGxv/Website-Background-basecolor1.png");
+    background-image:url("/images/backgrounds/Website_Background_basecolor1.png");
 }
 
 .games{
-    background-image:url("https://i.postimg.cc/QxJK644m/Website-Background-basecolor2.png");
+    background-image:url("/images/backgrounds/Website_Background_basecolor2.png");
 }
 
 .media{
-    background-image:url("https://i.postimg.cc/hv9QRpSS/Website-Background-basecolor3.png");
+    background-image:url("/images/backgrounds/Website_Background_basecolor3.png");
 }
 
 .about{
-    background-image:url("https://i.postimg.cc/GmM8RB1s/Website-Background-basecolor4.png");
+    background-image:url("/images/backgrounds/Website_Background_basecolor4.png");
 }
 
 /*Segment*/
@@ -131,49 +131,49 @@ headertext{
 
 @keyframes animate{
     0%{
-        background-image:url(https://i.postimg.cc/L5D53QWv/Sylvan.png);
+        background-image:url(/images/slideshow/Sylvan.png);
     }
     14%{
-        background-image:url(https://i.postimg.cc/L5D53QWv/Sylvan.png);
+        background-image:url(/images/slideshow/Sylvan.png);
     }
 
     16.66666%{
-        background-image:url(https://i.postimg.cc/SsWJJx7B/Ganon.png);
+        background-image:url(/images/slideshow/Ganon.png);
     }
     31%{
-        background-image:url(https://i.postimg.cc/SsWJJx7B/Ganon.png);
+        background-image:url(/images/slideshow/Ganon.png);
 
     }
     33.33333%{
-        background-image:url(https://i.postimg.cc/2yr3vN0V/Forest-Blockout.png);
+        background-image:url(/images/slideshow/ForestBlockout.png);
     }
     48%{
-        background-image:url(https://i.postimg.cc/2yr3vN0V/Forest-Blockout.png);
+        background-image:url(/images/slideshow/ForestBlockout.png);
     }
 
     50%{
-        background-image:url(https://i.postimg.cc/hjFXDdx8/Gem-Shield.png);
+        background-image:url(/images/slideshow/GemShield.png);
     }
     64%{
-        background-image:url(https://i.postimg.cc/hjFXDdx8/Gem-Shield.png);
+        background-image:url(/images/slideshow/GemShield.png);
     }
 
     66.66666%{
-        background-image:url(https://i.postimg.cc/KcD1b4YL/She-Wants-to-Play.png);
+        background-image:url(/images/slideshow/SheWantstoPlay.png);
     }
     81%{
-        background-image:url(https://i.postimg.cc/KcD1b4YL/She-Wants-to-Play.png);
+        background-image:url(/images/slideshow/SheWantstoPlay.png);
     }
 
     83.33333%{
-        background-image:url(https://i.postimg.cc/jjnWYXWd/Vine-Grapple.png);
+        background-image:url(/images/slideshow/VineGrapple.png);
     }
     98%{
-        background-image:url(https://i.postimg.cc/jjnWYXWd/Vine-Grapple.png);
+        background-image:url(/images/slideshow/VineGrapple.png);
     }
 
     100%{
-        background-image:url(https://i.postimg.cc/L5D53QWv/Sylvan.png);
+        background-image:url(/images/slideshow/Sylvan.png);
     }
 }
 
