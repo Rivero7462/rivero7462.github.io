@@ -15,6 +15,10 @@
     background-image:url("/images/backgrounds/Website_Background_basecolor4.png");
 }
 
+.resume{
+    background-color:dimgray;
+}
+
 /*Segment*/
 .segment{
     width:100%;
