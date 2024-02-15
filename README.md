@@ -5,11 +5,3 @@
 # then
 # http-server -c 1
 
-# About Section
-
-
-
-# Final
-# Fix Index icons scaling
-# Buttons and Correct photos
-#
