@@ -135,17 +135,17 @@ headertext{
 
 @keyframes animate{
     0%{
-        background-image:url(/images/slideshow/Sylvan.png);
+        background-image:url(/images/slideshow/Droplette.png);
     }
     14%{
-        background-image:url(/images/slideshow/Sylvan.png);
+        background-image:url(/images/slideshow/Droplette.png);
     }
 
     16.66666%{
-        background-image:url(/images/slideshow/Ganon.png);
+        background-image:url(/images/slideshow/MudBoss.png);
     }
     31%{
-        background-image:url(/images/slideshow/Ganon.png);
+        background-image:url(/images/slideshow/MudBoss.png);
 
     }
     33.33333%{
@@ -156,28 +156,28 @@ headertext{
     }
 
     50%{
-        background-image:url(/images/slideshow/GemShield.png);
+        background-image:url(/images/slideshow/Ganon.png);
     }
     64%{
-        background-image:url(/images/slideshow/GemShield.png);
+        background-image:url(/images/slideshow/Ganon.png);
     }
 
     66.66666%{
-        background-image:url(/images/slideshow/SheWantstoPlay.png);
+        background-image:url(/images/slideshow/Sylvan.png);
     }
     81%{
-        background-image:url(/images/slideshow/SheWantstoPlay.png);
+        background-image:url(/images/slideshow/Sylvan.png);
     }
 
     83.33333%{
-        background-image:url(/images/slideshow/VineGrapple.png);
+        background-image:url(/images/slideshow/SheWantstoPlay.png);
     }
     98%{
-        background-image:url(/images/slideshow/VineGrapple.png);
+        background-image:url(/images/slideshow/SheWantstoPlay.png);
     }
 
     100%{
-        background-image:url(/images/slideshow/Sylvan.png);
+        background-image:url(/images/slideshow/Droplette.png);
     }
 }
 
