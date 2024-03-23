@@ -1,18 +1,18 @@
 /*Backgrounds*/
 .home{
-    background-image:url("/images/backgrounds/Website_Background_basecolor1.png");
+    background-image:url("/images/backgrounds/Website_Background_basecolor1.jpg");
 }
 
 .games{
-    background-image:url("/images/backgrounds/Website_Background_basecolor2.png");
+    background-image:url("/images/backgrounds/Website_Background_basecolor2.jpg");
 }
 
 .media{
-    background-image:url("/images/backgrounds/Website_Background_basecolor3.png");
+    background-image:url("/images/backgrounds/Website_Background_basecolor3.jpg");
 }
 
 .about{
-    background-image:url("/images/backgrounds/Website_Background_basecolor4.png");
+    background-image:url("/images/backgrounds/Website_Background_basecolor4.jpg");
 }
 
 .resume{
@@ -135,49 +135,49 @@ headertext{
 
 @keyframes animate{
     0%{
-        background-image:url(/images/slideshow/Droplette.png);
+        background-image:url(/images/slideshow/Droplette.jpg);
     }
     14%{
-        background-image:url(/images/slideshow/Droplette.png);
+        background-image:url(/images/slideshow/Droplette.jpg);
     }
 
     16.66666%{
-        background-image:url(/images/slideshow/MudBoss.png);
+        background-image:url(/images/slideshow/MudBoss.jpg);
     }
     31%{
-        background-image:url(/images/slideshow/MudBoss.png);
+        background-image:url(/images/slideshow/MudBoss.jpg);
 
     }
     33.33333%{
-        background-image:url(/images/slideshow/ArbinForest.png);
+        background-image:url(/images/slideshow/ArbinForest.jpg);
     }
     48%{
-        background-image:url(/images/slideshow/ArbinForest.png);
+        background-image:url(/images/slideshow/ArbinForest.jpg);
     }
 
     50%{
-        background-image:url(/images/slideshow/Ganon.png);
+        background-image:url(/images/slideshow/Ganon.jpg);
     }
     64%{
-        background-image:url(/images/slideshow/Ganon.png);
+        background-image:url(/images/slideshow/Ganon.jpg);
     }
 
     66.66666%{
-        background-image:url(/images/slideshow/Sylvan.png);
+        background-image:url(/images/slideshow/Sylvan.jpg);
     }
     81%{
-        background-image:url(/images/slideshow/Sylvan.png);
+        background-image:url(/images/slideshow/Sylvan.jpg);
     }
 
     83.33333%{
-        background-image:url(/images/slideshow/SheWantstoPlay.png);
+        background-image:url(/images/slideshow/SheWantstoPlay.jpg);
     }
     98%{
-        background-image:url(/images/slideshow/SheWantstoPlay.png);
+        background-image:url(/images/slideshow/SheWantstoPlay.jpg);
     }
 
     100%{
-        background-image:url(/images/slideshow/Droplette.png);
+        background-image:url(/images/slideshow/Droplette.jpg);
     }
 }
 
