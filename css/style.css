@@ -64,6 +64,10 @@ whitetext{
     color:white;
 }
 
+bluetext{
+    color:blue;
+}
+
 /*Fixed Header*/
 header{
     position:fixed;
