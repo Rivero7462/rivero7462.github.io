@@ -306,9 +306,9 @@ createdtext{
 /*Media*/
 ArticleGameTitle{
     font-family:acumin-pro, sans-serif;
-    font-weight:350;
+    font-weight:600;
     font-style:normal;
-    font-size:80px;
+    font-size:40px;
 
     line-height:80px;
 }
