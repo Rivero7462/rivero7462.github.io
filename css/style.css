@@ -65,7 +65,7 @@ whitetext{
 }
 
 bluetext{
-    color:blue;
+    color:rgb(0, 191, 255);
 }
 
 /*Fixed Header*/
@@ -308,7 +308,7 @@ ArticleGameTitle{
     font-family:acumin-pro, sans-serif;
     font-weight:600;
     font-style:normal;
-    font-size:40px;
+    font-size:50px;
 
     line-height:80px;
 }
