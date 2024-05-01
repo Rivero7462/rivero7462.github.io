@@ -135,6 +135,10 @@ dropshadow{
     filter: drop-shadow(0.5rem 0.5rem 0.55rem rgba(3, 0, 20, 0.61));
 }
 
+.text_shadows{
+    text-shadow: 3px 3px 0 rgb(68, 68, 68);
+}
+
 font40{
     font-size:40px;
 }
@@ -172,29 +176,35 @@ bluetext{
 
 /*Home Games*/
 .gamebox{
-    height:650px;
+    height:100%;
+    display:table;
+    width: 100%;
 }
 
-GameTitle{
+.gametext{
+    inline-size:50%;
+    padding-right:2%;
+    padding-left:2%;
+
+    height:550px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.GameTitle{
     font-family:acumin-pro, sans-serif;
     font-size:80px;
-    line-height:80px;
     letter-spacing:2px;
+    color:white;
 }
 
-GameDescription{
+.GameDescription{
     font-family:acumin-pro, sans-serif;
     font-size:40px;
     letter-spacing:1px;
-    line-height:45px;
-}
-
-.game-text{
-    margin-top:50px;
-    inline-size:50%;
-    overflow-wrap:normal;
-    padding-right:2%;
-    padding-left:2%;
+    color:white;
 }
 
 .game-image-left{
