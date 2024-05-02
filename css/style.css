@@ -1,46 +1,3 @@
-/* Style the navigation menu */
-.topnav{
-    overflow:hidden;
-    background-color:#333;
-    position:fixed;
-    width:100%;
-    font-size:20px;
-    }
-
-/* Resume Link */
-.resume{
-    color:white;
-    float:right;
-    }
-
-/*Prevents drop down from overlapping icon*/
-.filler{
-    color:white;
-    margin-top:20px;
-    }
-  
-/* Hide the links inside the navigation menu*/
-.topnav #myLinks{
-    display:none;
-    }
-
-/* Hamburger Icon */
-.topnav a.icon{
-    background:black;
-    display:block;
-    position:absolute;
-    left:0;
-    top:0;
-    }
-
-/* Hamburger Dropdown Links */
-.topnav a{
-    color:white;
-    padding:10px 16px;
-    text-decoration:none;
-    display:block;
-    }
-
 /*Backgrounds*/
 .home{
     background-image:url("/images/backgrounds/Website_Background_basecolor1.jpg");
@@ -66,42 +23,57 @@
     background-size:500px;
 }
 
-/*Fixed Header*/
-header{
+/*Header*/
+.header{
+    overflow:hidden;
+    background-color:#333;
     position:fixed;
-    background-color:rgb(31, 31, 31);
     width:100%;
-    height:60px;
-}
-
-.headertext{
-    font-family:sans-serif;
     font-size:20px;
-    margin-top:15px;
-    margin-left:5%;
-}
+    }
+
+/*Hide the links inside the navigation menu*/
+.header #myLinks{
+    display:none;
+    float:left;
+    padding-left:15%;
+    }
+
+/*Hamburger Icon*/
+.header a.icon{
+    background:black;
+    color:white;
+    display:block;
+    position:absolute;
+    padding-left:3%;
+    padding-right:3%;
+    padding-top:5px;
+    padding-bottom:15px;
+    }
 
 .headerlinks{
     color:white;
     text-decoration:none;
-    padding-left:4%;
-    padding-right:4%;
-}
-
+    float:left;
+    margin-right:5%;
+    inline-size:50%;
+    margin-top:5px;
+    }
 .headerlinks:hover{
     color:gray
-}
+    }
 
-.resumelink{
+/*Resume Link*/
+.resume{
     color:white;
-    text-decoration:none;
     float:right;
-    padding-right:10%;
-}
-
-.resumelink:hover{
+    padding-bottom:15px;
+    margin-right:5%;
+    margin-top:5px;
+    }
+.resume:hover{
     color:gray
-}
+    }
 
 .video{
     width:100%;
@@ -117,21 +89,21 @@ header{
     width:100%;
     text-align:center;
     position:absolute;
-    z-index:-1;
-    top:450px;
+    top:25vw;
     color:white;
     -webkit-text-stroke-color:black;
+    filter:drop-shadow(0.5vw 0.5vw 0.55vw rgba(3, 0, 20, 0.61));
 }
 
 .videotext-name{
-    font-size:100px;
-    line-height:100px;
-    -webkit-text-stroke-width:3px;
+    font-size:6vw;
+    line-height:5vw;
+    -webkit-text-stroke-width:.12vw;
 }
 
 .videotext-occupation{
-    font-size:45px;
-    -webkit-text-stroke-width:2px;
+    font-size:3vw;
+    -webkit-text-stroke-width:.1vw;
 }
 
 /*Segment*/
@@ -192,10 +164,6 @@ header{
 /*Text*/
 acumin{
     font-family:acumin-pro, sans-serif;
-}
-
-dropshadow{
-    filter:drop-shadow(0.5rem 0.5rem 0.55rem rgba(3, 0, 20, 0.61));
 }
 
 .text_shadows{
@@ -499,7 +467,7 @@ footer-text{
 
 @media (min-width:600px){
     /*Monitor Specific Changes*/
-    .topnav{
+    .header{
         overflow:hidden;
         background-color:#333;
         position:fixed;
@@ -508,29 +476,18 @@ footer-text{
         height:45px;
     }
 
-    .topnav #myLinks{
+    .header #myLinks{
         display:flex;
+        float:left;
+        padding-left:5%;
+        inline-size:60%;
     }
     
-    .topnav a.icon{
+    .header a.icon{
         display:none;
-    }
-    
-    .filler{
-        color:white;
-        margin-top:0px;
-    }
-
-    .topnav a{
-        color:white;
-        padding:0% 5%;
-        text-decoration:none;
-        display:block;
-        margin-top:5px;
     }
 
     .resume{
-        color:white;
         float:right;
     }
 
