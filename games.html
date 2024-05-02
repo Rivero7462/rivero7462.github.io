@@ -11,24 +11,21 @@
     </head>
 <body class="games">
     
-    <!-- Fixed Header -->
-    <header>
-        <a href="/index.html" class="links" style="text-decoration:none">
-            <headertext>Home</headertext>
-        </a>
-        
-        <a href="/games.html" class="links" style="text-decoration:none">
-            <headertext>Games</headertext>
+    <!-- Header -->
+    <div class="header">
+        <div id="myLinks">
+            <a href="/index.html" class="headerlinks">Home</a>
+            <a href="/games.html" class="headerlinks">Games</a>
+            <a href="/media.html" class="headerlinks">Media</a>
+            <a href="/about.html" class="headerlinks">About</a>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
         </a>
 
-        <a href="/media.html" class="links" style="text-decoration:none">
-            <headertext>Media</headertext>
-        </a>
-        
-        <a href="/about.html" class="links" style="text-decoration:none">
-            <headertext>About</headertext>
-        </a>
-    </header>
+        <a href="/files/AlexSmith_Resume.pdf" target="_blank" download="/files/AlexSmith_Resume.pdf" class="resume">Resume</a>
+    </div>
 
     <br>
     <br>
@@ -192,25 +189,16 @@
     <div class="segment"></div>
 
     <!-- Footer -->
-    <footer-text class="float-left">
-        <br>
-        <whitetext>© 2023 By Alex Smith</whitetext>
-    </footer-text>
-
-    <footer class="centertext">
-
-        <a href="/files/AlexSmith_Resume.pdf" target="_blank" download="/files/AlexSmith_Resume.pdf" download>
-            <footer-text>
-                <br>
-                <whitetext><u>Resume</u></whitetext>
-            </footer-text>
-        </a>
+    <footer>
+        <footer-text class="float-left">
+            <whitetext>© 2023 By Alex Smith</whitetext>
+        </footer-text>
         
-        <a href="/games.html">
-            <footer-text class="float-right">
-                <whitetext>Back to Top</whitetext>
-            </footer-text>
-        </a>
+        <footer-text class="float-right">
+            <a href="/games.html" class="footerlinks">
+                Back to Top
+            </a>
+        </footer-text>
     </footer>
 
     <!-- End page content -->
