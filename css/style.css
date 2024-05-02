@@ -93,21 +93,6 @@ headertext{
     width: 100px;
     height: 100px;
     margin:0 auto;
-    margin-top: 10px;
-}
-
-@media (min-width: 600px) {
-    .logoitem{
-        display:table-cell;
-        width:auto;
-    }
-    .logoitem img {
-        display: block;
-        width: 100px;
-        height: 100px;
-        margin:0 auto;
-        margin-top: 10px;
-    }
 }
 
 .logotitle{
@@ -200,28 +185,28 @@ bluetext{
     padding-right:2%;
     padding-left:2%;
 
-    height:550px;
+    height:fit-content;
     display:flex;
     justify-content:center;
     align-items:center;
     flex-wrap:wrap;
-
 
     overflow:hidden;
 }
 
 .GameTitle{
     font-family:acumin-pro, sans-serif;
-    font-size:10px;
+    font-size:25px;
     letter-spacing:2px;
     color:white;
+    line-height:30px;
 }
 
 .GameDescription{
     font-family:acumin-pro, sans-serif;
-    font-size:40px;
-    letter-spacing:1px;
     color:white;
+    font-size:10px;
+    letter-spacing:1px;
 }
 
 .game-image-left{
@@ -446,4 +431,43 @@ footer-text{
     font-size:30px;
     padding-left:7%;
     padding-right:7%;
+}
+
+@media (min-width: 600px) {
+    /*Monitor Specific Changes*/
+    .logoitem{
+        display:table-cell;
+        width:auto;
+    }
+    .logoitem img {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin:0 auto;
+    }
+
+    .GameTitle{
+        font-size:80px;
+        line-height:normal;
+    }
+
+    .GameDescription{
+        font-size:40px;
+        line-height:50px;
+    }
+    
+    .gametext{
+        inline-size:50%;
+        padding-right:2%;
+        padding-left:2%;
+    
+        height:550px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-wrap:wrap;
+    
+        
+        overflow:hidden;
+    }
 }
