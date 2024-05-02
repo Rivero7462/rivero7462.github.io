@@ -86,7 +86,7 @@ headertext{
 }
 
 .logoitem {
-    display:table-cell;
+    width:100%;
 }
 .logoitem img {
     display: block;
@@ -94,6 +94,20 @@ headertext{
     height: 100px;
     margin:0 auto;
     margin-top: 10px;
+}
+
+@media (min-width: 600px) {
+    .logoitem{
+        display:table-cell;
+        width:auto;
+    }
+    .logoitem img {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin:0 auto;
+        margin-top: 10px;
+    }
 }
 
 .logotitle{
@@ -191,11 +205,14 @@ bluetext{
     justify-content:center;
     align-items:center;
     flex-wrap:wrap;
+
+
+    overflow:hidden;
 }
 
 .GameTitle{
     font-family:acumin-pro, sans-serif;
-    font-size:80px;
+    font-size:10px;
     letter-spacing:2px;
     color:white;
 }
