@@ -31,12 +31,33 @@ header{
     height:60px;
 }
 
-headertext{
-    font-family:acumin-pro, sans-serif;
-    font-size:25px;
-    padding-left:7%;
-    padding-right:7%;
-    padding-top:100%;
+.headertext{
+    font-family:sans-serif;
+    font-size:20px;
+    margin-top:15px;
+    margin-left:5%;
+}
+
+.headerlinks{
+    color:white;
+    text-decoration:none;
+    padding-left:4%;
+    padding-right:4%;
+}
+
+.headerlinks:hover{
+    color:gray
+}
+
+.resumelink{
+    color:white;
+    text-decoration:none;
+    float:right;
+    padding-right:10%;
+}
+
+.resumelink:hover{
+    color:gray
 }
 
 .video{
@@ -162,15 +183,6 @@ whitetext{
 
 bluetext{
     color:rgb(0, 191, 255);
-}
-
-.links{
-    color:white;
-    text-decoration:none;
-}
-
-.links:hover{
-    color:gray
 }
 
 /*Home Games*/
@@ -420,17 +432,26 @@ h3{
 
 footer{
     background-color:black;
-    height:140px;
+    height:100px;
     width:100%;
 }
 
 footer-text{
     font-family:sans-serif;
-    font-weight:600;
-    font-style:normal;
-    font-size:30px;
+    font-weight:100;
+    font-size:18px;
     padding-left:7%;
     padding-right:7%;
+    margin-top:30px;
+}
+
+.footerlinks{
+    color:white;
+    text-decoration:none;
+}
+
+.footerlinks:hover{
+    color:gray
 }
 
 @media (min-width: 600px) {
@@ -469,5 +490,14 @@ footer-text{
     
         
         overflow:hidden;
+    }
+
+    footer-text{
+        font-family:sans-serif;
+        font-weight:100;
+        font-size:30px;
+        padding-left:7%;
+        padding-right:7%;
+        margin-top:30px;
     }
 }
