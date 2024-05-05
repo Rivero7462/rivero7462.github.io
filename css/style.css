@@ -194,10 +194,6 @@ whitetext{
     color:white;
 }
 
-bluetext{
-    color:rgb(0, 191, 255);
-}
-
 /*Home Games*/
 .gamebox{
     height:100%;
@@ -264,20 +260,18 @@ bluetext{
 }
 
 .game-box{
-    width:500px;
-    height:500px;
     margin:25px;
 }
 
 .game-image{
-    width:500px;
+    width:54vh;
     border-radius:50px 50px 0px 0px;
     border:12px solid rgb(31, 31, 31);
 }
 
 /*Role Box*/
 .game-role{
-    width:500px;
+    width:54vh;
 
     font-size:3vw;
     border-top:0;
@@ -293,38 +287,57 @@ roletext{
 }
 
 /*Media*/
-ArticleGameTitle{
-    font-family:acumin-pro, sans-serif;
-    font-weight:600;
-    font-style:normal;
-    font-size:50px;
+.media-box{
+    color:white;
 
-    line-height:80px;
+    text-align:center;
+    display:flex;
+    flex-direction:row;
+    flex:50%;
+    height:100%;
+}
+
+.media-left{
+    margin-left:2%;
+    margin-right:10%;
+}
+
+.media-right{
+    margin-right:2%;
 }
 
 .media-text{
-    font-size:60px;
+    font-family:acumin-pro, sans-serif;
+    font-size:3vw;
+    font-weight:600;
 }
 
 .youtube-image{
-    inline-size:50%;
-    height:100%;
-    display:flex;
-
-    max-height:650px;
-    max-width:951px;
+    max-height:10vw;
+    max-width:10vw;
+    width:49%;
+    margin-bottom:3vw;
 }
 
 .youtube-text{
     font-family:acumin-pro, sans-serif;
-    font-weight:550;
     font-style:normal;
-    font-size:40px;
+    font-size:2vw;
+    width:50%;
+    display:inline-block;
+}
 
-    padding-right:5%;
+.articlegame{
+    font-size:2vw;
+    margin-top:2vw;
+    margin-bottom:1vw;
+}
 
-    letter-spacing:2px;
-    line-height:35px;
+.articlelinks{
+    font-size:1.5vw;
+    color:rgb(0, 191, 255);
+    text-decoration:none;
+    line-height:3vw;
 }
 
 /*About*/
