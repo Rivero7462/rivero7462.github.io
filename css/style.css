@@ -288,8 +288,6 @@ roletext{
 
 /*Media*/
 .media-box{
-    color:white;
-
     text-align:center;
     display:flex;
     flex-direction:row;
@@ -310,6 +308,7 @@ roletext{
     font-family:acumin-pro, sans-serif;
     font-size:3vw;
     font-weight:600;
+    color:white;
 }
 
 .youtube-image{
@@ -325,12 +324,14 @@ roletext{
     font-size:2vw;
     width:50%;
     display:inline-block;
+    color:white;
 }
 
 .articlegame{
     font-size:2vw;
     margin-top:2vw;
     margin-bottom:1vw;
+    color:white;
 }
 
 .articlelinks{
