@@ -256,50 +256,40 @@ bluetext{
     border-right:0;
 }
 
-/*Game Image*/
-.game-row{
-    height:fit-content;
+.games-list{
     display:flex;
+    flex-flow:wrap;
+    width:100%;
+    justify-content:center;
 }
 
-.game-distance{
-    margin-left:4%;
-    margin-right:4%;
-    inline-size:50%;
+.game-box{
+    width:500px;
+    height:500px;
+    margin:25px;
 }
 
 .game-image{
+    width:500px;
     border-radius:50px 50px 0px 0px;
-    width:100%;
-}
-
-/*Border*/
-.border{
-    border:8px solid black;
+    border:12px solid rgb(31, 31, 31);
 }
 
 /*Role Box*/
-.role-box{
-    font-size:60px;
+.game-role{
+    width:500px;
+
+    font-size:3vw;
     border-top:0;
     height:fit-content;
-    background-color:rgb(172, 255, 117);
+    border-radius:0px 0px 20px 20px;
+    background-color:rgb(19, 19, 19);
+    border:12px solid rgb(31, 31, 31);
 }
 
 roletext{
     line-height:80px;
-}
-
-/*Created Box*/
-.created-box{
-    border-top:0;
-    height:fit-content;
-    background-color:rgb(255, 253, 125);
-}
-
-createdtext{
-    font-size:45px;
-    line-height:60px;
+    color:white;
 }
 
 /*Media*/
