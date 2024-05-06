@@ -517,6 +517,14 @@ footer-text{
         margin:0 auto;
     }
 
+    .logotitle{
+        font-size:4vw;
+    }
+    
+    .logodescription{
+        font-size:2vw;
+    }
+
     .GameTitle{
         font-size:80px;
         line-height:normal;
