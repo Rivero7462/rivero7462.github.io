@@ -173,14 +173,6 @@ acumin{
     color:white;
 }
 
-font40{
-    font-size:40px;
-}
-
-italics{
-    font-style:italic;
-}
-
 /*Text Position*/
 .centertext{
     text-align:center;
@@ -189,10 +181,6 @@ italics{
 /*Text Colors*/
 redtext{
     color:red;
-}
-
-whitetext{
-    color:white;
 }
 
 /*Home Games*/
@@ -206,13 +194,11 @@ whitetext{
     inline-size:50%;
     padding-right:2%;
     padding-left:2%;
-
     height:fit-content;
     display:flex;
     justify-content:center;
     align-items:center;
     flex-wrap:wrap;
-
     overflow:hidden;
 }
 
@@ -346,7 +332,9 @@ roletext{
 
 /*About*/
 .aboutsection{
-    height:100%; display:flex;
+    height:100%;
+    display:flex;
+    color:white;
 }
 
 .about-box{
@@ -442,10 +430,9 @@ roletext{
     resize:none;
 }
 
-about-header{
+.about-header{
     font-family:acumin-pro, sans-serif;
     font-weight:600;
-    font-style:italic;
     font-size:5vw;
 }
 
@@ -469,6 +456,7 @@ footer-text{
     padding-left:7%;
     padding-right:7%;
     margin-top:30px;
+    color:white;
 }
 
 .footerlinks{
