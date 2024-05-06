@@ -334,13 +334,13 @@ roletext{
 .aboutsection{
     height:100%;
     display:flex;
-    color:white;
 }
 
 .about-box{
     overflow-wrap:normal;
     width:80%;
     padding-left:10%;
+    color:white;
 }
 
 .about-header{
