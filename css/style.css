@@ -169,7 +169,8 @@ acumin{
 }
 
 .text_shadows{
-    text-shadow:3px 3px 0 rgb(68, 68, 68);
+    text-shadow:.2vw .2vw 0 rgb(68, 68, 68);
+    color:white;
 }
 
 font40{
@@ -301,6 +302,9 @@ roletext{
 
 .media-right{
     margin-right:2%;
+    background-color: #333;
+    border-radius:20px 20px 20px 20px;
+    border:12px solid rgb(31, 31, 31);
 }
 
 .media-text{
@@ -341,57 +345,46 @@ roletext{
 }
 
 /*About*/
+.aboutsection{
+    height:100%; display:flex;
+}
+
 .about-box{
     overflow-wrap:normal;
+    width:80%;
+    padding-left:10%;
+}
+
+.about-header{
+    font-family:acumin-pro, sans-serif;
+    font-weight:600;
+    font-style:normal;
+    font-size:4vw;
+}
+
+.about-image{
+    width:100%;
+    border-radius:50px 50px 0px 0px;
+}
+
+.profile-image{
+    padding-top:10%;
+    height:70vw;
+    padding-right:10%;
 }
 
 .about-text{
     font-family:acumin-pro, sans-serif;
     font-weight:600;
     font-style:normal;
-    font-size:30px;
-
-    line-height:35px;
-    padding-left:250px;
+    font-size:1.5vw;
 }
 
 .skills-tab{
     font-family:acumin-pro, sans-serif;
     font-weight:600;
     font-style:normal;
-    font-size:30px;
-
-    line-height:35px;
-    padding-left:250px;
-}
-
-h1{
-    font-family:acumin-pro, sans-serif;
-    font-weight:600;
-    font-style:normal;
-    font-size:80px;
-    padding-left:350px;
-}
-
-h2{
-    font-family:acumin-pro, sans-serif;
-    font-weight:600;
-    font-style:italic;
-    font-size:70px;
-    color:white;
-}
-
-h3{
-    font-family:acumin-pro, sans-serif;
-    font-weight:400;
-    font-style:normal;
-    font-size:30px;
-}
-
-.profile-image{
-    padding-top:10%;
-    height:100%;
-    padding-right:10%;
+    font-size:1.5vw;
 }
 
 .btn:hover{
@@ -403,14 +396,14 @@ h3{
     width:fit-content;
     border-radius:30px;
 
-    border-color:black;
+    border-color:rgb(31, 31, 31);;
     border-style:solid;
     border-width:10px;
 
     font-family:acumin-pro, sans-serif;
     font-weight:600;
     font-style:normal;
-    font-size:40px;
+    font-size:4vw;
     color:black;
 }
 
@@ -418,36 +411,53 @@ h3{
     height:fit-content;
     margin-left:2%;
     margin-right:2%;
-
     font-family:sans-serif;
     font-weight:600;
     font-style:normal;
-    font-size:30px;
-    color:black;
+    font-size:3vw;
+    color:rgb(31, 31, 31);;
+    border-radius:10px;
 }
 
 .contact-subject{
     height:fit-content;
-
+    width:85%;
     font-family:sans-serif;
     font-weight:600;
     font-style:normal;
-    font-size:30px;
-    color:black;
+    font-size:3vw;
+    color:rgb(31, 31, 31);
+    border-radius:10px;
 }
 
 .contact-message{
     height:500px;
-
+    width:85%;
     font-family:sans-serif;
     font-weight:400;
     font-style:normal;
-    font-size:25px;
-    color:black;
+    font-size:3vw;
+    color:rgb(31, 31, 31);
+    border-radius:10px;
+    resize:none;
+}
+
+about-header{
+    font-family:acumin-pro, sans-serif;
+    font-weight:600;
+    font-style:italic;
+    font-size:5vw;
+}
+
+.about-description{
+    font-family:acumin-pro, sans-serif;
+    font-size:2vw;
+    font-weight:400;
+    font-style:normal;
 }
 
 footer{
-    background-color:black;
+    background-color:rgb(31, 31, 31);;
     height:100px;
     width:100%;
 }
@@ -535,6 +545,24 @@ footer-text{
     
     .game-role{
         width:54vh;
+    }
+
+    .email-button{
+        font-size:2vw;
+    }
+
+    .contact-name-email{
+        font-size:1.5vw;
+    }
+    
+    .contact-subject{
+        font-size:1.5vw;
+        width:60%;
+    }
+    
+    .contact-message{
+        font-size:1.5vw;
+        width:60%;
     }
 
     footer-text{
