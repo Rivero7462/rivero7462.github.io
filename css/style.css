@@ -178,59 +178,11 @@ redtext{
 }
 
 /*Home Games*/
-.gamebox{
-    height:100%;
-    display:table;
-    width:100%;
-}
-
-.gametext{
-    inline-size:50%;
-    padding-right:2%;
-    padding-left:2%;
-    height:fit-content;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-wrap:wrap;
-    overflow:hidden;
-}
-
-.GameTitle{
-    font-family:acumin-pro, sans-serif;
-    font-size:25px;
-    letter-spacing:2px;
-    color:white;
-    line-height:30px;
-}
-
-.GameDescription{
-    font-family:acumin-pro, sans-serif;
-    color:white;
-    font-size:10px;
-    letter-spacing:1px;
-}
-
-.game-image-left{
-    border-radius:0px 20px 20px 0px;
-    width:50%;
-    height:100%;
-    display:flex;
-    max-height:650px;
-    max-width:951px;
-    border:10px solid rgb(31, 31, 31);
-    border-left:0;
-}
-
-.game-image-right{
-    border-radius:20px 0px 0px 20px;
-    width:50%;
-    height:100%;
-    display:flex;
-    max-height:650px;
-    max-width:951px;
-    border:10px solid rgb(31, 31, 31);
-    border-right:0;
+.game-reel{
+    width:42.6vw;
+    height:24vw;
+    border-radius:30px;
+    border:12px solid rgb(31, 31, 31);
 }
 
 .games-list{
