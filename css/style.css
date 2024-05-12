@@ -253,16 +253,13 @@ redtext{
 /*Role Box*/
 .game-role{
     width:54vw;
-    font-size:3vw;
+    font-size:1.4vw;
     border-top:0;
     height:fit-content;
     border-radius:0px 0px 20px 20px;
     background-color:rgb(19, 19, 19);
     border:12px solid rgb(31, 31, 31);
-}
-
-roletext{
-    line-height:80px;
+    line-height:40px;
     color:white;
 }
 
