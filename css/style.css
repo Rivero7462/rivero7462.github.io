@@ -210,7 +210,6 @@ redtext{
 /*Role Box*/
 .game-role{
     width:54vw;
-    font-size:1.4vw;
     border-top:0;
     height:fit-content;
     border-radius:0px 0px 20px 20px;
@@ -222,6 +221,7 @@ redtext{
 
 .role-text{
     margin-left:15%;
+    font-size:3.5vw;
 }
 
 /*Game*/
@@ -488,16 +488,8 @@ footer-text{
         line-height:50px;
     }
     
-    .gametext{
-        inline-size:50%;
-        padding-right:2%;
-        padding-left:2%;
-        height:550px;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        flex-wrap:wrap;
-        overflow:hidden;
+    .role-text{
+        font-size:1.4vw;
     }
 
     .game-image{
