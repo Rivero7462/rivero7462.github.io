@@ -5,6 +5,12 @@
     background-size:500px;
     }
 
+.game{
+    background-image:url("/images/backgrounds/Website_Background_basecolor2.jpg");
+    background-attachment:fixed;
+    background-size:500px;
+}
+
 .media{
     background-image:url("/images/backgrounds/Website_Background_basecolor3.jpg");
     background-attachment:fixed;
@@ -88,7 +94,6 @@
     color:white;
     -webkit-text-stroke-color:black;
     text-shadow:0vw 0vw 0.55vw rgb(3, 0, 20);
-
 }
 
 .videotext-name{
@@ -217,6 +222,38 @@ redtext{
 
 .role-text{
     margin-left:15%;
+}
+
+/*Game*/
+.game-title{
+    width:40%;
+    text-align:center;
+}
+
+.gametextmargin{
+    font-family:acumin-pro, sans-serif;
+    color:white;
+    margin-left:25%;
+    margin-right:25%;
+    font-size:.9vw;
+}
+
+.gamesubtitle{
+    color:rgb(105, 138, 92);
+    font-weight:600;
+    font-size:1vw;
+}
+
+.gameheading{
+    color:rgb(255, 255, 255);
+    font-weight:600;
+    font-size:2vw;
+}
+
+.game-media{
+    border-radius:10px;
+    width:32vw;
+    height:18vw;
 }
 
 /*Media*/
