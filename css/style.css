@@ -256,6 +256,25 @@ redtext{
     height:18vw;
 }
 
+.downloadbutton{
+    background-color:white;
+    height:fit-content;
+    width:30%;
+    border-radius:30px;
+    margin-left:35%;
+    margin-right:35%;
+
+    border-color:rgb(31, 31, 31);;
+    border-style:solid;
+    border-width:10px;
+
+    font-family:acumin-pro, sans-serif;
+    font-weight:600;
+    font-style:normal;
+    font-size:3vw;
+    color:black;
+}
+
 /*Media*/
 .media-box{
     text-align:center;

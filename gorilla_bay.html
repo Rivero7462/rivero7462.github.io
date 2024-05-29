@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Alex Smith's Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://use.typekit.net/sge4hna.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="./script.js"></script>
+    </head>
+<body class="home">
+
+    <!-- Header -->
+    <div class="header">
+        <div id="myLinks">
+            <a href="/index.html" class="headerlinks">Home</a>
+            <a href="/media.html" class="headerlinks">Media</a>
+            <a href="/about.html" class="headerlinks">About</a>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <a href="/files/AlexSmith_Resume.pdf" target="_blank" download="/files/AlexSmith_Resume.pdf" class="resume">Resume</a>
+    </div>
+
+    <br><br><br><br>
+    <!-- Title -->
+    <div class="centertext">
+        <img class="game-title" src="/images/gametitles/GorillaBayTitle.png" alt="GorillaBayTitle">
+    </div>
+
+    <br>
+
+    <!-- Game Showcase -->
+    <div class="centertext">
+        <iframe style="width:48vw;height:27vw;border-radius:20px;" src="https://www.youtube.com/embed/GiSxSmOVE7k?si=82t6ehe_PIkcFrlf" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
+
+    <br>
+
+    <div class="gametextmargin">
+        <a class="gamesubtitle">Responsiblilities:</a><br>        
+        • Designing a modular quest and dialog system.<br>
+        • Developing four science-based modules that cover STEM topics such as the solar system, physics, ecosystem, and the human body. <br>
+        • Utilizing the localization dashboard to effectively implement translations for dialog into the game.<br>
+        • Concepting and prototyping gameplay after brainstorming with professors from diverse academia backgrounds including linguistics, engineering, and english.<br>
+        
+        <br>
+        <br>
+
+        <a class="gameheading">Photo-taking Mechanics</a><br>
+        The premise of the game is to teach refugee learners vocabulary from their native language to English. This is taught by the use of a camera.
+        
+        <br><br>
+
+        <a class="gamesubtitle">Camera:</a> The player can take photos of objects and items in the environment to recieve dialog. The Camera is designed so that if there
+        are multiple actors of interest, it targets the closest object by comparing line traces. There are both quest and non-quest specific actors which can be
+        photographics at any time or just once. A modular component is added to an actor if it can be photographed making it easy to apply to any actor. This component also
+        stores the dialog upon taking the photo.
+
+        <br><br>
+
+        <div class="centertext">
+            <img class="game-media" src="/images/gamedetails/GorillaBay_Camera.gif" alt="WaterGif">
+        </div>
+        
+        <br>
+
+        <a class="gameheading">Modular Quests</a><br>
+        <a class="gamesubtitle">Quest functionality:</a> When starting a quest, goals are added to an array and the player is given a counter to keep track of their progress.
+        The player can leave the level where the quest is located as well as save and quit and still return to where they left off.
+
+        <br><br>
+
+        <div class="centertext">
+            <img class="game-media" src="/images/gamedetails/GorillaBay_Quest.gif" alt="Pulley">
+        </div>
+        
+        <br>
+
+        <a class="gamesubtitle">Markers:</a> Quest actors derived from a base quest class which provide functionality such as UI markers. These are waypoints that
+        can be seen anywhere within the level and appear when the quest starts and disapear once interacted with properly. Markers help prevent the player from getting lost
+        or losing track of a quest actor if it is moving. Markers can be disabled for specific actors if they are not needed.
+
+        <br><br>
+
+        <div class="centertext">
+            <img class="game-media" src="/images/gamedetails/GorillaBay_Markers.jpg" alt="Pipes">
+        </div>
+        
+        <br>
+
+        <a class="gamesubtitle">Interactibles:</a> Some quest actors can be completed by taking photos of them while others can be completed by interacting with them through
+        the use of a button or switch. This provides an element of variety, allowing the player to still be capable of taking pictures, but also being able to interact with
+        the environment to learn about it as well.
+
+        <br><br>
+
+        <div class="centertext">
+            <img class="game-media" src="/images/gamedetails/GorillaBay_Interactables.gif" alt="MudRamp">
+        </div>
+        
+        <br>
+
+        <a class="gameheading">Undergraduate Research Assistant to Independant Contractor</a><br>
+        As an undergraduate research assistant, I was original tasked with assisting the game design professor who was acting as the Lead Designer. After my
+        first year he transitioned from academia to industry, leaving me to work solo the following year while the next professor settled in. I proved to be
+        invaluable to the project and was hired after graduation over the summer as an independant contractor to finish creating a playable demo of the game.
+    </div>
+
+    <br>
+
+    <div class="downloadbutton centertext btn">
+        <a style="text-decoration:none;" href="https://download1580.mediafire.com/0cp5dqev5vkgiPac7mel901O5WrvPAhC9emgrf5bPNaMD1mKRrMJtMBT623GJ_aTqdRN_IhiLLMGR50N-Z0DALpNtna2BC2ucsf7uxKHgFywDMxhmeOT6h48Aiv92jqnxlQ8WMswb_WViPYeEZ_A5dIyChXRi1loUjhqSQLSQT_i/sb3zfgctf789i2k/Gorilla_Bay_Demo.zip">
+            Download
+        </a>
+    </div>
+
+    <br>
+
+    <!-- Footer -->
+    <footer>
+        <footer-text class="float-left">
+            © 2023 By Alex Smith
+        </footer-text>
+        
+        <footer-text class="float-right">
+            <a href="/media.html" class="footerlinks">
+                Back to Top
+            </a>
+        </footer-text>
+    </footer>
+
+<!-- End page content -->
+</body>
+
+</html>
