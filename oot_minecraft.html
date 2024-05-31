@@ -37,7 +37,7 @@
 
     <!-- Game Showcase -->
     <div class="centertext">
-        <iframe style="width:48vw;height:27vw;border-radius:20px 20px 20px 20px;" src="https://www.youtube.com/embed/gtZtfXEQ8Dw?si=dg9IIT1ySuJdOuxp" title="YouTube video player" frameborder="0"
+        <iframe style="width:48vw;height:27vw;border-radius:20px 20px 20px 20px;" src="https://www.youtube.com/embed/rPERgP6bsmo?si=vk58toM37L7YB78v" title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
     </div>
@@ -45,186 +45,177 @@
     <br>
 
     <div class="gametextmargin">
-        <a class="gamesubtitle">Responsiblilities:</a><br>        
-        • Creating the players mobility and projectile mechanics.<br>
-        • Designing both modular and environment specific puzzles.<br>
-        • Collaborating with other designers to implement models, animations, and music.<br>
-        • Bug fixing player, gameplay, and boss mechanics to ensure a polished final product.<br>
-        • Integrating saving and loading system with save files.<br>
-        • Shipping Windows, Linux, and Mac builds on Steam including achievements.<br>
+        <a class="gamesubtitle">Responsibilities:</a><br>        
+        • Creating Ocarina of Time using the Minecraft Engine.<br>
+        • Recreating mechanics that function the same as the original game.<br>
+        • Conceptualizing alternate functionality for mechanics without losing likeness.<br>
+        • Balancing Ocarina of Time's likeness and Minecraft's atmosphere.<br>
+        • Creating engaging gameplay and combat systems throughout the game.<br>
         
         <br>
         <br>
 
-        <a class="gameheading">Player Mechanics</a><br>
-        The player has four main abilities. Each power has it's own unique mobility and projectile mechanics which act as the crux for gameplay allowing you to
-        platform and solve puzzles.
+        <a class="gameheading">Item Mechanics</a><br>
+        The player obtains and uses several items to platform, solve puzzles, and fight enemies effectively. Many items work in different unique ways persuading the player
+        to use their full arsenal.
         
         <br><br>
 
-        <a class="gamesubtitle">Water:</a> Water is the ability the player starts as. This is designed as the players main method of platforming. The player can dash and jump in different ways
-        depending on their order of inputs. This allows more advanced movement options such as chain dashing and wave dashing which give you an extra boost if timed
-        right. You can shoot water which can interact with the environment such as putting out fires and dispersing mud.
+        <a class="gamesubtitle">Hookshot:</a> The hookshot is an item that can stun enemies and take the player to certain walls and objects. It uses a ray trace by using
+        recursion in order to detect space for the player to shoot. Checking in a radius along the distance of the ray prevents shooting through corners of blocks.
+        Depending on the space around the targeted location, it decides where the player should be located at. If it's on a wall or ceiling, the player will simply stop
+        moving. If there is space above the targeted spot, the player will be put on top effectively climbing up it.
 
         <br><br>
 
         <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_Water.gif" alt="WaterGif">
+            <img class="game-media" src="/images/gamedetails/oot_hookshot.gif" alt="Hookshot">
         </div>
         
         <br>
 
-        <a class="gamesubtitle">Mud:</a> Mud allows you to transform into a ball and roll around. This is used to gain momentum and launch off ramps as well as use it on anti-gravity ramps.
-        You can also go through small spaces you wouldn't be able to enter otherwise. You now shoot mud projectiles which are heavy and can weight down
-        objects and pulleys. These can be destroyed with water.
+        <a class="gamesubtitle">Bombchus:</a> Bombchus are a more advanced version of bombs that follow the direction they are placed down at. It can traverse
+        complex terrain and properly inverts its direction when switching between floor and ceiling. It can also detect when bombable objects are in its path and destroy
+        it as expected.
         
         <br><br>
            
         <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_Mud.gif" alt="MudGif">
+            <img class="game-media" src="/images/gamedetails/oot_bombchu.gif" alt="Bombchus">
         </div>
         
         <br>
 
-        <a class="gamesubtitle">Ice:</a> Ice can slow down time. The player itself is not affected by the time dilation. This allows you to platform across moving objects you couldn't stand on
-        previously as well as interact with multiple objects faster than at normal speeds. The player can shoot ice projectiles which stick to wood and ice
-        materials and create platforms. You can shoot multiple projectiles to make a bridge this way. The projectile is also slow when time is slowed allowing you to
-        stand on the projectile and ride it.
+        <a class="gamesubtitle">Boomerang:</a> The boomerang can stun enemies, activate switches, and also pick up items on the ground. It has two modes. The first goes
+        in a big arc allowing you to hit multiple things in a circle. This can also help reach targets behind walls you can't directly hit. The other mode allows you to
+        aim straight forward which focuses on accuracy and singular targets. Depending on the angle that you look at, it will move along the same path, but the Y height axis
+        will adjust accordingly.
 
         <br><br>
 
         <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_Ice.gif" alt="IceGif">
+            <img class="game-media" src="/images/gamedetails/oot_boomerang.gif" alt="Boomerang">
         </div>
         
         <br>
 
-        <a class="gamesubtitle">Cloud:</a> Cloud has a stronger double jump than water but no dash. Instead, it can become intangible and pass through certain meshes like fencing and grates.
-        The player itself acts as the projectile for this power allowing you to launch yourself to distant locations.
+        <a class="gameheading">Enemies</a><br>
+        All enemies were designed modularly enabling them to be summoned anywhere in any environment. Each enemy possesses unique attacks and methods of being damaged.
+
+        <br><br>
+
+        <a class="gamesubtitle">Deku Scrubs/Octoroks:</a> These two enemies use projectiles of their own to attack the player. Using a shield the player can reflect
+        projectiles back to deal damage. They both will move down to safety if the player gets within melee range. While Octoroks die immediately upon being hit, Deku
+        scrubs will only be exposed and run around for a short period of time before returning to the ground. This is an opening for the player to get close and defeat it. 
 
         <br><br>
 
         <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_Cloud.gif" alt="CloudGif">
+            <img class="game-media" src="/images/gamedetails/oot_scrub.gif" alt="Scrub">
         </div>
         
         <br>
 
-        <a class="gameheading">Modular Mechanics</a><br>
-        <a class="gamesubtitle">Weighable Systems:</a> There are weighable and pulley systems that can be used to obstruct or open the players path. They can also act as moving platforms.
-        These can be interacted with by weighing them with mud projectiles or un-weighing them by shooting the mud with water. The weighable system is modular
-        and can be used to make more systems that mud can interact with in future releases such as rotating wheels.
+        <a class="gamesubtitle">Beamos:</a> Beamos are a unique, stationary enemy that requires the use of bombs to defeat, otherwise being invulnerable. The Beamos
+        will spin in circles until the player is in line of sight and shoot a laser as its attack is made by a ray cast. Once the beamos has sights on you, it will repeatedly
+        attack until you move out of range or destroy it. These enemies are not usually required to defeat if the player would prefer to sneak around them instead.
 
         <br><br>
 
         <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_Pulley.jpg" alt="Pulley">
+            <img class="game-media" src="/images/gamedetails/oot_beamos.gif" alt="Beamos">
         </div>
         
         <br>
 
-        <a class="gamesubtitle">Pipes:</a> Pipes are paths that only projectiles and mud ball can enter. They move along a spline which are easy to modify. There are several settings
-        that change the pipes properties such as suction. If the pipe has no suction, the player moves through it as normal. If the pipe does have suction,
-        the player gets sucked in and shot out through the other end. Depending on the strenght, this can launch the player or projectiles to far distances.
-        You can also set whether the pipe suction goes both ways or only one direction resulting in the otherside lightly pushing you away.
+        <a class="gamesubtitle">Stalfos/Lizalfos:</a> Stalfos and Lizalfos have their own unique attacking AI that is more advanced than the default minecraft mob AI.
+        They are capable of dodging in different directions and moving in ways that may be difficult to attack. The Stalfos has a shield which can also be used to defend.
+        The player can defeat it by timing their attacks well, but it is recommended to use items to stun them shown by blue particles which give you time to deal multiple
+        hits.
 
         <br><br>
 
         <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_Pipes.jpg" alt="Pipes">
+            <img class="game-media" src="/images/gamedetails/oot_stalfos.gif" alt="Stalfos">
         </div>
         
         <br>
 
-        <a class="gamesubtitle">Mud Ramps:</a> These anti-gravity ramps move along a spline that the player can roll up as mud ball. They are very flexible and can go almost anywhere.
-        The camera follows the player appearing upright even if upside down. Rolling off flips you back to normal gravity.
+        <a class="gamesubtitle">Iron Knuckle:</a> These enemies act as powerful tanks. They both have a ton of health and deal lots of damage. Attacking can be dangerous
+        because their attacks have much longer range and ranged attacks don't work on them. They have an attack that swings horizontally covering a lot of area and a vertical
+        attack that reaches even further in front. It is easiest to bait them into an attack and then strike as they are slow moving. After they are at half health, part of
+        their armor falls off and they become faster. Attacking now stuns them so it's possible to stun lock them until defeated.
 
         <br><br>
 
         <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_MudRamp.png" alt="MudRamp">
+            <img class="game-media" src="/images/gamedetails/oot_ironknuckle.gif" alt="IronKnuckle">
         </div>
         
         <br>
 
-        <a class="gamesubtitle">Matches:</a> The player can pick up matches that can be lit and put out as well as thrown. These abilities provide solutions to puzzles such as starting
-        fires, activating switches, burning things, and lighting dark areas. Fire can damage the player so dropping the match and standing on it does damage
-        the player. Walking into water with a match also puts it out.
+        <a class="gameheading">Bosses</a><br>
+        There are 10 bosses in the game created, not including minibosses. All of them have their own unique attack patterns and AI.
+
+        <br><br>
+
+        <a class="gamesubtitle">Ganon:</a> Ganon is the final boss of the game having the most advanced fight and animations. He is very large compared to the player with
+        his only weakness being his tail. The player has to dodge his two giant sword attacks to get around or run through the legs to get behind in order to attack. This
+        can be made easier by shooting projectiles at his head to stun momentarily. This is the only boss that isn't health based and is instead exactly 20 hits. There
+        are obstacles in the arena that the player can bait Ganon into and destroy which reveals extra health.
 
         <br><br>
 
         <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_Match.jpg" alt="Match">
+            <img class="game-media" src="/images/gamedetails/oot_ganon.gif" alt="Ganon">
         </div>
         
         <br>
 
-        <a class="gameheading">Boss</a><br>
-        Mud Boss has hands which shapeshift into different attacks. The player starts as water which makes it easy to deal with his attacks as they are mud
-        and can be shot at. You need mud ability to attack him however so the fight becomes more difficult after collecting the power behind him. This allows
-        the player to become familiar with his attack cycles before increasing the difficulty. You must use his attacks against him in order to damage him.
-
-        <br><br>
-
-        <a class="gamesubtitle">Mud Walls:</a> Mud boss can spawn mud walls from his hands which take on different shapes. They can be dodged or shot at with water.
+        <a class="gamesubtitle">Bongo Bongo:</a> An invisible being with disembodied hands. This boss fight is meant to disorient the player and force them to keep
+        track of many things at once such as attack patterns, player location, and ammo. Its hands are the main focus. They hit a giant drum that acts as the arena
+        causing the player to constantly fly into the air. The hands also have a range of attacks from swiping, slamming, punching, and grabbing. The player must
+        stun both hands with projectiles while dodging these attacks. Once both are stunned, the boss will charge in which leaves his eye open for an attack in order
+        to be defeated.
 
         <br><br>
 
         <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_MudWalls.gif" alt="MudWalls">
+            <img class="game-media" src="/images/gamedetails/oot_bongobongo.gif" alt="BongoBongo">
         </div>
         
         <br>
 
-        <a class="gamesubtitle">Mud Projectile:</a> Mud boss can turn his hands into cannons and shoot heat seeking mud projectiles at you. These can also be shot with water or dodged.
+        <a class="gamesubtitle">Volvagia:</a> Volvagia is a lengthy serpent-like dragon with three main attacks. Each segment of the
+        body acts independently of each other using an integer for each part to know what order it goes in. There are nine lava pits in the arena which act as
+        a game of whack-a-mole. If you don't attack in time, it will breathe fire on you. It can also fly in the air around you breathing fire in front of it.
+        Dodging the fire itself can be easy, but its long body can easily wrap around you making it hard to escape. Its final attack involves it flying up to the ceiling
+        and dropping fire rocks around you. Paying attention to where it is above makes it easy to dodge. During its two flying attacks you can actually deal damage
+        to the head with projectiles so that it isn't purely a waiting game.
 
         <br><br>
 
         <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_BossProjectile.gif" alt="MudProjectile">
+            <img class="game-media" src="/images/gamedetails/oot_volvagia.gif" alt="Volvagia">
         </div>
         
-        <br>
-
-        <a class="gamesubtitle">Mud Suction:</a> Mud boss' cannon hands can suck the player in, shooting them into crystals hanging from above. If mud is shot, it will weigh the crystals above
-        down dealing damage to the boss.
-
-        <br><br>
-
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_Suction.gif" alt="MudSuction">
-        </div>
-        
-        <br>
-
-        <a class="gamesubtitle">Mud Hammer:</a> Mud boss can turn his hands into hammers which he uses to try and squish the player. If he misses, a mud ramp spawns allowing the player to climb
-        on top of mud boss and weigh the crystals above him down to deal damage.
-
-        <br><br>
-
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_Hammer.gif" alt="MudHammer">
-        </div>
-        
-        <br>
-
-        After shooting three crystals, pipes replace their locations with hanging chains. Shooting the chains releases water and shrinks the boss until the player
-        can finally shoot water themselves and shrink the boss to defeat him.
-
         <br><br>
 
         <a class="gamesubtitle">Challenges:</a><br>        
-        • Balancing abilities so that each has its own pros and cons so as not to feel limited when using a different power. Water is the only one that can dash, so other
-        abilities needed mobility options that could match that speed. Mud ball for example rolls faster than running.<br>
-        • Mud Ramps can have complex spline paths which when paired with their anti-gravity properties can be difficult to navigate along. Simplifying the splines
-        as much as possible and smoothing camera movement help combat this.
+        • Inventory Management: The player travels through time making some but not all items in their inventory unusable. A mix of cloning inventory to containers like
+        shulker boxes and saving loading data with jukeboxes was used in order to effectively add, remove, and swap items while keeping any ammo the same as well.<br>
+        • Minecraft's engine is constantly updating as the project progresses requiring many mechanics to be revisited and updated.
     </div>
 
     <br>
 
-    <div class="centertext">
-        <iframe style="width:51vw; height:15vw;" src="https://store.steampowered.com/widget/2745370/" frameborder="0"></iframe>
+    <div class="downloadbutton centertext btn">
+        <a style="text-decoration:none;" href="https://www.minecraftmaps.com/40931-the-legend-of-zelda-ocarina-of-time-in-minecraft">
+            Download
+        </a>
     </div>
+
+    <br>
 
     <!-- Footer -->
     <footer>
