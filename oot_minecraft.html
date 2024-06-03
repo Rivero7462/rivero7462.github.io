@@ -42,9 +42,11 @@
         </iframe>
     </div>
 
-    <br>
-
     <div class="gametextmargin">
+        A full recreation of The Legend of Zelda Ocarina of Time made using Minecraft's engine.
+
+        <br><br>
+
         <a class="gamesubtitle">Responsibilities:</a><br>        
         • Creating Ocarina of Time using the Minecraft Engine.<br>
         • Recreating mechanics that function the same as the original game.<br>
@@ -53,25 +55,25 @@
         • Creating engaging gameplay and combat systems throughout the game.<br>
         
         <br>
-        <br>
 
         <a class="gamesubtitle">Achievements:</a><br>        
         • Achieved over 23,000 downloads within the initial year of release.<br>
         • Kickstarted a Discord server currently holding over 1,400 users.<br>
 
         <br>
-        <br>
 
         <a class="gameheading">Item Mechanics</a><br>
-        The player obtains and uses several items to platform, solve puzzles, and fight enemies effectively. Many items work in different unique ways persuading the player
-        to use their full arsenal.
+        In order to make different items do unique actions, I implemented a right-click feature using a scoreboard that increments when used. During the time of creation
+        this only worked by using a carrot-on-a-stick. By replacing each damage value with a separate texture and giving each item a unique tag, I created multiple
+        right-clickable items that run different functions. I designed other items with alternate features such as physically throwing the item like bombs, or simply
+        walking over points of interest while the item is selected in your hotbar.
         
         <br><br>
 
-        <a class="gamesubtitle">Hookshot:</a> The hookshot is an item that can stun enemies and take the player to certain walls and objects. It uses a ray trace by using
-        recursion in order to detect space for the player to shoot. Checking in a radius along the distance of the ray prevents shooting through corners of blocks.
-        Depending on the space around the targeted location, it decides where the player should be located at. If it's on a wall or ceiling, the player will simply stop
-        moving. If there is space above the targeted spot, the player will be put on top effectively climbing up it.
+        <a class="gamesubtitle">Hookshot:</a> The hookshot is an example of a right-clickable item. When used, a ray cast detects the space the player is aiming and
+        determines whether it is safe to move the player through that space. For each point in the trace, I check the area in a radius to account for the player's collision
+        and prevent it from traveling through corners of walls. Upon reaching the destination, I decide where the player should go depending on the situation. If the
+        target is on a wall or ceiling, the player will stop moving. If there is space above the targeted location, the player will be put on top, effectively climbing up it.
 
         <br><br>
 
@@ -81,9 +83,10 @@
         
         <br>
 
-        <a class="gamesubtitle">Bombchus:</a> Bombchus are a more advanced version of bombs that follow the direction they are placed down at. It can traverse
-        complex terrain and properly inverts its direction when switching between floor and ceiling. It can also detect when bombable objects are in its path and destroy
-        it as expected.
+        <a class="gamesubtitle">Bombchus:</a> Bombchu's are another right-clickable item. They are a versatile explosive that moves forward on all surfaces. To enhanve the
+        accuracy of the item compared to the base game, I simplified its movement by going staight up walls making it more predictable. Once it transitions to a ceiling, its
+        direction inverts properly continuing the direct path. It can also detect when bombable objects are in its path and destroy them as intended. I aimed to replicate
+        the original game's capability for the Bombchu to easily traverse any terrain, which works effectively by detecting blocks in its path.
         
         <br><br>
            
@@ -93,21 +96,52 @@
         
         <br>
 
-        <a class="gamesubtitle">Boomerang:</a> The boomerang can stun enemies, activate switches, and also pick up items on the ground. It has two modes. The first goes
-        in a big arc allowing you to hit multiple things in a circle. This can also help reach targets behind walls you can't directly hit. The other mode allows you to
-        aim straight forward which focuses on accuracy and singular targets. Depending on the angle that you look at, it will move along the same path, but the Y height axis
-        will adjust accordingly.
+        <a class="gameheading">Reimagining Gameplay</a><br>
+        While combat and items translated fairly well, there are certain gameplay features that aren't so easy to implement as is.
+
+        <br><br>
+
+        <a class="gamesubtitle">Wallet system:</a> In the original game, players collect rupees throughout their journey, which get added to a counter. Minecraft's inventory
+        item limit is restricted to 64, and storing money using a scoreboard would introduce an unnecessary UI element on screen at all times. To adress this limitation, I
+        decided to allow collection of physical rupee items. I then created a conversion system to cash out rupees into greater values in shops which bypasses the 64 item
+        limit. For wallet upgrades, an invisible scoreboard converts and keeps track of the total rupee value. This compares with the wallet size and removes any rupees that
+        can't fit.
 
         <br><br>
 
         <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/oot_boomerang.gif" alt="Boomerang">
+            <img class="game-media" src="/images/gamedetails/oot_rupees.jpg" alt="Scrub">
         </div>
-        
+
+        <br>
+
+        <a class="gamesubtitle">Magic system:</a> In the base game, certain items require a magic meter, typically displayed under the health bar. Conveniently, Minecraft's
+        experience bar visually fits this description. I was able to repurpose the experience bar as a magic meter. I achieved this by making sure summoned enemies don't
+        drop experience and manually adding and removing experience levels upon item usage.
+
+        <br><br>
+
+        <div class="centertext">
+            <img class="game-media" src="/images/gamedetails/oot_magic.gif" alt="Scrub">
+        </div>
+
+        <br>
+
+        <a class="gamesubtitle">Loot Tables:</a> Drawing from the game's data, I accurately replicated enemy drops and container items. The original game has many checks
+        that decide what can drop by checking the players health, magic, and ammunition. Using loot tables contained in .json files, I easily replicated this by checking
+        player health, experience levels, and scoreboards containing ammo.
+
+        <br><br>
+
+        <div class="centertext">
+            <img class="game-media" src="/images/gamedetails/oot_loot.jpg" alt="Scrub">
+        </div>
+
         <br>
 
         <a class="gameheading">Enemies</a><br>
-        All enemies were designed modularly enabling them to be summoned anywhere in any environment. Each enemy possesses unique attacks and methods of being damaged.
+        All enemies were designed modularly enabling them to be summoned anywhere in any environment provided the right conditions. Each enemy possesses unique attacks
+        and methods of being damaged using the items and weapons found throughout the journey.
 
         <br><br>
 
