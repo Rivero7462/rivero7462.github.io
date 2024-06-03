@@ -253,7 +253,7 @@ redtext{
 .game-media{
     border-radius:10px;
     width:32vw;
-    height:18vw;
+    max-height:18vw;
 }
 
 .downloadbutton{

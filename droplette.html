@@ -42,12 +42,14 @@
         </iframe>
     </div>
 
-    <br>
-
     <div class="gametextmargin">
+        Droplette is a cozy puzzle platformer where you use your abilities on the environment around you to save your captured friend.
+
+        <br><br>
+
         <a class="gamesubtitle">Responsibilities:</a><br>        
-        • Creating the players mobility and projectile mechanics.<br>
-        • Designing both modular and environment specific puzzles.<br>
+        • Creating the players mobility and projectile mechanics for each of the four abilities.<br>
+        • Designing both modular and environment specific puzzles like weighable systems and anti-gravity ramps.<br>
         • Collaborating with other designers to implement models, animations, and music.<br>
         • Bug fixing player, gameplay, and boss mechanics to ensure a polished final product.<br>
         • Integrating saving and loading systems with save files.<br>
@@ -56,15 +58,33 @@
         <br>
         <br>
 
-        <a class="gameheading">Player Mechanics</a><br>
-        The player has four main abilities. Each power has its own unique mobility and projectile mechanics which act as the crux for gameplay allowing you to
-        platform and solve puzzles.
+        <a class="gameheading">Player Ability Development:</a><br>
+        The initial concept centered on the player possessing four main abilities, all interacting with the environment in different ways. I wanted to encourage the
+        player to survey the area and determine the most effective ability for each situation, based on the unique functionalities of each power. A goal of mine was
+        to make sure each power had its own pros and cons so as not to make any one power feel more useful than another. The game is currently in early access but my
+        vision incorporates using a combinations of powers to solve puzzles as you permanently unlock them. The demo currently ends with unlocking mud first.
         
         <br><br>
 
-        <a class="gamesubtitle">Water:</a> Water is the ability the player starts as. This is designed as the player's main method of platforming. The player can dash and jump in different ways
-        depending on their order of inputs. This allows more advanced movement options such as chain dashing and wave dashing which give you an extra boost if timed
-        right. You can shoot water which can interact with the environment such as putting out fires and dispersing mud.
+        <div class="centertext">
+            <img class="game-media" src="/images/gamedetails/Droplette_Abilities.jpg" alt="Powerups">
+        </div>
+
+        <br>
+
+        Originally, I envisioned health and ammunition to be tied to the same meter. The player would have a limited number of projectiles, dashes, and double jumps,
+        creating a cohesive experience where resource management influenced gameplay. As the player used more water, they would become more vulnerable but gain other
+        benefits, such as increased mobility or the ability to fit into smaller spaces.<br>
+        The idea was scrapped because balancing this system proved challenging and restrictive. Even if executed well, it would put stress on the player by making
+        them focus on the limits more instead of just puzzle solving. I believe this method would work for a more level-based game but with the open world factor
+        of our game it just didn't work. It's a mechanic idea I would like to revisit.
+        
+        <br><br>
+
+        <a class="gamesubtitle">Water:</a> To not overwhelm the player, I wanted each elemental ability to be thematically similar. I accomplished this by making each
+        ability include a locomotion and projectile mechanic. I wanted water to be the main method of precise platforming and casually moving around the world which
+        is why I created a dash as the locomotion mechanic. The dash was designed with double jumping in mind, allowing for versatile combinations based on user preference.
+        It also gives an extra boost if dashes are timed well for speedrunners who like to optimize movement.
 
         <br><br>
 
@@ -74,9 +94,9 @@
         
         <br>
 
-        <a class="gamesubtitle">Mud:</a> Mud allows you to transform into a ball and roll around. This is used to gain momentum and launch off ramps as well as use it on anti-gravity ramps.
-        You can also go through small spaces you wouldn't be able to enter otherwise. You now shoot mud projectiles which are heavy and can weigh down
-        objects and pulleys. These can be destroyed with water.
+        <a class="gamesubtitle">Mud:</a> I wanted mud to be heavily physics-oriented. Mud would already feel slower than water without a dash mechanic, so I needed a way
+        to match that speed while still having its own unique properties. This led to the creation of mud ball. This is the mud powers locomotion ability which can roll
+        quickly and go even faster if momentum is gained down a slope. It also allows you to go through smaller spaces.
         
         <br><br>
            
@@ -86,10 +106,13 @@
         
         <br>
 
-        <a class="gamesubtitle">Ice:</a> Ice can slow down time. The player itself is not affected by the time dilation. This allows you to platform across moving objects you couldn't stand on
-        previously as well as interact with multiple objects faster than at normal speeds. The player can shoot ice projectiles which stick to wood and ice
-        materials and create platforms. You can shoot multiple projectiles to make a bridge this way. The projectile is also slow when time is slowed allowing you to
-        stand on the projectile and ride it.
+        <a class="gamesubtitle">Ice:</a> Ice power is primarily centered around time. While its locomotion power doesn't increase the player's movement, it does slow down
+        the world instead. By reducing the global time dilation and increasing the player's time dilation by the same factor, I was able to maintain the players speed 
+        while slowing down everything else. This provides me with opportunities to use this in puzzles where the player needs fast reaction time or to navigate across
+        fast moving objects.<br>
+        In order for timers and delays to work properly in the player, I developed a macro that calculates the time with the current dilation. Another unique trait of
+        ice is the ability to create platforms using its projectile. These projectiles can stick to wood and ice, transforming into platforms. Due to the projectiles
+        being made of ice I made sure you can shoot multiple at a time to create bridges and shapes.
 
         <br><br>
 
@@ -99,8 +122,12 @@
         
         <br>
 
-        <a class="gamesubtitle">Cloud:</a> Cloud has a stronger double jump than water but no dash. Instead, it can become intangible and pass through certain meshes like fencing and grates.
-        The player itself acts as the projectile for this power allowing you to launch yourself to distant locations.
+        <a class="gamesubtitle">Cloud:</a> I wanted cloud to be the most unique and freeing power, as it is only fully unlock near the end of the game. With this power,
+        the player themselves become the projectile, enabling swift travel across the level and easy access to distant locations. Like water, cloud also has a double
+        jump and can be used after hitting a wall with projectile. This feature was added in as a correction mechanism so that the player didn't have to focus on being
+        fully precise in their aiming.<br>
+        For the locomotion power, it makes you intangible like a cloud, allowing you to pass through certain walls and gates like chain fences and wiring. This can be
+        used in combination with projectile to launch yourself through walls without hitting the ground.
 
         <br><br>
 
@@ -111,9 +138,11 @@
         <br>
 
         <a class="gameheading">Modular Mechanics</a><br>
-        <a class="gamesubtitle">Weighable Systems:</a> There are weighable and pulley systems that can be used to obstruct or open the players path. They can also act as moving platforms.
-        These can be interacted with by weighing them with mud projectiles or un-weighing them by shooting the mud with water. The weighable system is modular
-        and can be used to make more systems that mud can interact with in future releases such as rotating wheels.
+
+        <a class="gamesubtitle">Weighable Systems:</a> I wanted to include weight-based puzzles to use with mud. This modular mechanic could be used in various puzzles
+        to control moving platforms, clear obstructions, and interact with objects. They also serve as the primary method for damaging the boss. Initially, I used a
+        spline for the rope but it proved suboptimal since moving the spline points required constant mesh updates. I implemented cable components to achieve the same
+        effect, avoiding the complexity of spline paths.
 
         <br><br>
 
@@ -123,10 +152,10 @@
         
         <br>
 
-        <a class="gamesubtitle">Pipes:</a> Pipes are paths that only projectiles and mud ball can enter. They move along a spline which are easy to modify. There are several settings
-        that change the pipes properties such as suction. If the pipe has no suction, the player moves through it as normal. If the pipe does have suction,
-        the player gets sucked in and shot out through the other end. Depending on the strength, this can launch the player or projectiles to far distances.
-        You can also set whether the pipe suction goes both ways or only one direction resulting in the other side lightly pushing you away.
+        <a class="gamesubtitle">Pipes:</a> I developed a simple spline system blueprint for creating pipe mechanics with diverse functionality. The primary feature
+        involves suction, where the player can enter with mud ball and launch themselves in the air. I also made projectiles work with it for additional puzzle
+        potential and functionality. The suction can go both directions or only one with a simple bool check. It can also be turned off completely and the player
+        has full control inside as mud ball. Lastly, the pipe ends can be easily swapped to connect to other pipe splines to navigate through.
 
         <br><br>
 
@@ -136,8 +165,12 @@
         
         <br>
 
-        <a class="gamesubtitle">Mud Ramps:</a> These anti-gravity ramps move along a spline that the player can roll up as a mud ball. They are very flexible and can go almost anywhere.
-        The camera follows the player appearing upright even if upside down. Rolling off flips you back to normal gravity.
+        <a class="gamesubtitle">Mud Ramps:</a> These anti-gravity ramps use a more complex spline path. A major challenge with the spline itself was getting the ramp
+        to transition from vertical to horizontal without the mesh rotation breaking. To address this, functionality was added based on roll rotation. Another
+        significant issue was the ramps anti-gravity properties. The mud ball, being a physics object, was intended to roll along the ramp with a gravity-like force
+        towards the hit points. Too many unknown variables made it difficult to consistently stick to the ramps surface.<br>
+        To resolve this, I implemented a switch between simulated physics and Unreal's floating pawn movement, which provided more consistent movement along the mud
+        ramp spline. Despite these improvements, certain mud ramps can be difficult to navigate along. It is something I plan to revisit and refine for the final release.
 
         <br><br>
 
@@ -147,47 +180,38 @@
         
         <br>
 
-        <a class="gamesubtitle">Matches:</a> The player can pick up matches that can be lit and put out as well as thrown. These abilities provide solutions to puzzles such as starting
-        fires, activating switches, burning things, and lighting dark areas. Fire can damage the player so dropping the match and standing on it does damage
-        the player. Walking into water with a match also puts it out.
-
-        <br><br>
-
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_Match.jpg" alt="Match">
-        </div>
-        
-        <br>
-
         <a class="gameheading">Boss</a><br>
-        Mud Boss has hands which shapeshift into different attacks. The player starts as water which makes it easy to deal with his attacks as they are mud
-        and can be shot at. You need mud ability to attack him however so the fight becomes more difficult after collecting the power behind him. This allows
-        the player to become familiar with his attack cycles before increasing the difficulty. You must use his attacks against him in order to damage him.
+        Mud boss acts as the final test for the player, using what they've learned in order to defeat the boss and permanently obtain mud power. I could envision the
+        boss being a big jump in difficulty as it is also the first enemy encounter. I wanted to ease the player into the fight.<br>
+        By starting the player off as water, a majority of the boss' attacks are ineffective since they can be easily countered with water projectiles. Mud power is
+        needed in order to deal damage which means the player will have to actively dodge the attacks when they switch. I designed it this way to give the player plenty
+        of time to see how the boss fights and understand its moveset before deciding when they are ready to increase the difficulty by collecting the powerup.
 
         <br><br>
 
-        <a class="gamesubtitle">Mud Walls:</a> Mud boss can spawn mud walls from his hands which take on different shapes. They can be dodged or shot at with water.
+        The Mud Boss's hands transform into various attacks, which I intend for the player to use against him. Two of his four attacks provide opportunity to damage him
+        with the intention that if the player can't figure out one method, they still have an alternative. Through testing I observed that if people do not discover both
+        methods, the openings for an attack go from 50% to 25% leading to a waiting game.<br>
+        In future releases, I want to make the attacks more obvious on what to do. I also plan to make all attacks have methods of damaging him or at least guarantee a
+        way for the boss to do a specific attack.
+
+        <br><br>
+
+        <a class="gamesubtitle">Mud Hammer:</a> The objective in the fight is to weigh down the prominent crystals hanging above the boss. When the boss uses his hammer
+        attack, a mud ramp materializes, allowing the player to climb up and land on the boss with mud ball. This gives the player enough height to shoot the crystals
+        down manually.
 
         <br><br>
 
         <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_MudWalls.gif" alt="MudWalls">
+            <img class="game-media" src="/images/gamedetails/Droplette_Hammer.gif" alt="MudHammer">
         </div>
         
         <br>
-
-        <a class="gamesubtitle">Mud Projectile:</a> Mud boss can turn his hands into cannons and shoot heat seeking mud projectiles at you. These can also be shot with water or dodged.
-
-        <br><br>
-
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_BossProjectile.gif" alt="MudProjectile">
-        </div>
         
-        <br>
-
-        <a class="gamesubtitle">Mud Suction:</a> Mud boss' cannon hands can suck the player in, shooting them into crystals hanging from above. If mud is shot, it will weigh the crystals above
-        down dealing damage to the boss.
+        <a class="gamesubtitle">Mud Suction:</a> Mud boss also turns his hands into pipes, creating suction that draws the player in and launches them into the crystals.
+        This mechanic serves as a punishment, but I designed it to hint at the fact that he shoots the crystals specifically. By shooting mud projectiles into his hands
+        before being sucked in, the boss will shoot these projectiles into the crystals weighing them down.
 
         <br><br>
 
@@ -197,27 +221,30 @@
         
         <br>
 
-        <a class="gamesubtitle">Mud Hammer:</a> Mud boss can turn his hands into hammers which he uses to try and squish the player. If he misses, a mud ramp spawns allowing the player to climb
-        on top of mud boss and weigh the crystals above him down to deal damage.
+        <a class="gamesubtitle">Mud Projectiles and Mud Walls:</a> His other attacks involve shooting heat seeking mud projectiles and mud walls that damage the player
+        on being hit.
 
         <br><br>
 
         <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_Hammer.gif" alt="MudHammer">
+            <img class="game-media" src="/images/gamedetails/Droplette_MudWalls.gif" alt="MudWalls">
         </div>
         
         <br>
 
-        After shooting three crystals, pipes replace their locations with hanging chains. Shooting the chains releases water and shrinks the boss until the player
-        can finally shoot water themselves and shrink the boss to defeat him.
-
+        <div class="centertext">
+            <img class="game-media" src="/images/gamedetails/Droplette_BossProjectile.gif" alt="MudProjectile">
+        </div>
+        
         <br><br>
 
-        <a class="gamesubtitle">Challenges:</a><br>        
-        • Balancing abilities so that each has its own pros and cons so as not to feel limited when using a different power. Water is the only one that can dash, so other
-        abilities needed mobility options that could match that speed. Mud ball for example rolls faster than running.<br>
-        • Mud Ramps can have complex spline paths which when paired with their anti-gravity properties can be difficult to navigate along. Simplifying the splines
-        as much as possible and smoothing camera movement help combat this.
+        <a class="gamesubtitle">Additional Content:</a><br>        
+        As someone who enjoys 100% completing games and cheat codes, I wanted to provide additional content for player's who share these interests. There are four parkour
+        time trial levels that can be unlocked by solving puzzles which give you extra health when completed. There are also extras and cheats hidden throughout
+        the levels which unlock cosmetics and game breaking features.<br>
+        To preserve the integrity of the first playthrough, the player must first complete the main game or start a new game+ where they keep their collectibles. Some
+        cheats include infinite jumping and dashing, A turbo button that accelerates the game similar to an emulator, and a remove all barriers option allowing you
+        to explore out of bounds in the levels.
     </div>
 
     <br>
