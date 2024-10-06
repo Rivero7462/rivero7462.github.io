@@ -52,194 +52,109 @@
 
         <br><br>
 
-        <a class="gamesubtitle">Overview:</a><br>        
-        <a style="color:rgb(86, 172, 52);">•</a> Creating Ocarina of Time using the Minecraft Engine.<br>
-        <a style="color:rgb(86, 172, 52);">•</a> Recreating mechanics that function the same as the original game.<br>
-        <a style="color:rgb(86, 172, 52);">•</a> Conceptualizing alternate functionality for mechanics without losing likeness.<br>
+        <a class="gamesubtitle">Overview:</a><br>
+        <a style="color:rgb(86, 172, 52);">•</a> Recreating enemy and item mechanics that function the same as the original game.<br>
+        <a style="color:rgb(86, 172, 52);">•</a> Conceptualizing alternate functionality for gameplay without losing likeness.<br>
+        <a style="color:rgb(86, 172, 52);">•</a> Replicating accurate data such as damage, health, time, and money.<br>
         <a style="color:rgb(86, 172, 52);">•</a> Balancing Ocarina of Time's likeness and Minecraft's atmosphere.<br>
-        <a style="color:rgb(86, 172, 52);">•</a> Creating engaging gameplay and combat systems throughout the game.<br>
-        
-        <br>
 
-        <a class="gamesubtitle">Achievements:</a><br>        
-        <a style="color:rgb(86, 172, 52);">•</a> Achieved over 23,000 downloads within the initial year of release.<br>
-        <a style="color:rgb(86, 172, 52);">•</a> Kickstarted a Discord server currently holding over 1,400 users.<br>
+        <br><br>
 
-        <br>
+        <a class="gamesubtitle">Achievements:</a><br>
+        <a style="color:rgb(86, 172, 52);">•</a> Surpassed 23,000 downloads within the first year of release.<br>
+        <a style="color:rgb(86, 172, 52);">•</a> Established a Discord community with over 1,400 users.<br>
+
+        <br><br>
 
         <a class="gameheading">Item Mechanics</a><br>
-        In order to make different items do unique actions, I implemented a right-click feature using a scoreboard that increments when used. During the time of creation
-        this only worked by using a carrot-on-a-stick. By replacing each damage value with a separate texture and giving each item a unique tag, I created multiple
-        right-clickable items that run different functions. I designed other items with alternate features such as physically throwing the item like bombs, or simply
-        walking over points of interest while the item is selected in your hotbar.
-        
-        <br><br>
-
-        <a class="gamesubtitle">Hookshot:</a> The hookshot is an example of a right-clickable item. When used, a ray cast detects the space the player is aiming and
-        determines whether it is safe to move the player through that space. For each point in the trace, I check the area in a radius to account for the player's collision
-        and prevent it from traveling through corners of walls. Upon reaching the destination, I decide where the player should go depending on the situation. If the
-        target is on a wall or ceiling, the player will stop moving. If there is space above the targeted location, the player will be put on top, effectively climbing up it.
+        A right-click feature for multiple items was implemented using scoreboards that update based on item usage. This utilizes a carrot-on-a-stick mechanic,
+        assigning unique tags to items for varied functionality. The <a class="gamesubtitle">hookshot</a> uses raycasting to detect safe movement spaces. The
+        programming accounts for player collision, allowing traversal over walls and ceilings or stopping movement when obstructed. <a class="gamesubtitle">Bombchus</a>
+        function as versatile explosives, moving predictably across surfaces while detecting destructible objects in their path. Movement has been simplified to enhance
+        predictability. A block filter is used to determine which blocks count as solid surfaces.
 
         <br><br>
 
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/oot_hookshot.gif" alt="Hookshot">
+        <div class="game-image-grid">
+            <div class="centertext">
+                <img class="game-media" src="/images/gamedetails/oot_hookshot.gif" alt="Hookshot" onclick="expandImage(this)">
+            </div>
+
+            <div class="centertext">
+                <img class="game-media" src="/images/gamedetails/oot_bombchu.gif" alt="Bombchus" onclick="expandImage(this)">
+            </div>
         </div>
-        
-        <br>
 
-        <a class="gamesubtitle">Bombchus:</a> Bombchu's are another right-clickable item. They are a versatile explosive that moves forward on all surfaces. To enhanve the
-        accuracy of the item compared to the base game, I simplified its movement by going staight up walls making it more predictable. Once it transitions to a ceiling, its
-        direction inverts properly continuing the direct path. It can also detect when bombable objects are in its path and destroy them as intended. I aimed to replicate
-        the original game's capability for the Bombchu to easily traverse any terrain, which works effectively by detecting blocks in its path.
-        
         <br><br>
-           
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/oot_bombchu.gif" alt="Bombchus">
-        </div>
-        
-        <br>
 
         <a class="gameheading">Reimagining Gameplay</a><br>
-        While combat and items translated fairly well, there are certain gameplay features that aren't so easy to implement as is.
+        Certain gameplay features were adapted to work with the Minecraft's engine. To adapt the <a class="gamesubtitle">rupee collection</a> system, players collect 
+        physical rupee items instead of using a scoreboard-based currency to avoid a constant UI element. A conversion system for cashing out rupees in shops was
+        implemented to manage inventory and manage the 64 item limit. Minecraft's experience bar was repurposed as a <a class="gamesubtitle">magic meter</a>. This was
+        achieved by ensuring summoned enemies do not drop experience and manually adjusting experience levels upon magic usage. Utilizing JSON files,
+        <a class="gamesubtitle">enemy loot</a> and container items were replicated, mimicking the original game's complex checks by assessing player health, magic
+        meter, and ammo scoreboards.
 
         <br><br>
 
-        <a class="gamesubtitle">Wallet system:</a> In the original game, players collect rupees throughout their journey, which get added to a counter. Minecraft's inventory
-        item limit is restricted to 64, and storing money using a scoreboard would introduce an unnecessary UI element on screen at all times. To adress this limitation, I
-        decided to allow collection of physical rupee items. I then created a conversion system to cash out rupees into greater values in shops which bypasses the 64 item
-        limit. For wallet upgrades, an invisible scoreboard converts and keeps track of the total rupee value. This compares with the wallet size and removes any rupees that
-        can't fit.
+        <div class="game-image-grid">
+            <div class="centertext">
+                <img class="game-media" src="/images/gamedetails/oot_rupees.jpg" alt="Rupees" onclick="expandImage(this)">
+            </div>
 
-        <br><br>
+            <div class="centertext">
+                <img class="game-media" src="/images/gamedetails/oot_magic.gif" alt="Magic" onclick="expandImage(this)">
+            </div>
 
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/oot_rupees.jpg" alt="Scrub">
+            <div class="centertext">
+                <img class="game-media" src="/images/gamedetails/oot_loot.jpg" alt="Loot" onclick="expandImage(this)">
+            </div>
         </div>
 
         <br>
 
-        <a class="gamesubtitle">Magic system:</a> In the base game, certain items require a magic meter, typically displayed under the health bar. Conveniently, Minecraft's
-        experience bar visually fits this description. I was able to repurpose the experience bar as a magic meter. I achieved this by making sure summoned enemies don't
-        drop experience and manually adding and removing experience levels upon item usage.
+        <a class="gameheading">Enemies and Bosses</a><br>
+        Enemies were designed modularly to allow dynamic spawning across environments. Each one including the 10 bosses possess unique attacks patterns and weaknesses to items.
 
         <br><br>
 
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/oot_magic.gif" alt="Scrub">
+        <div class="game-image-grid">
+            <div class="centertext">
+                <img class="game-media" src="/images/gamedetails/oot_scrub.gif" alt="Scrub" onclick="expandImage(this)">
+            </div>
+
+            <div class="centertext">
+                <img class="game-media" src="/images/gamedetails/oot_beamos.gif" alt="Beamos" onclick="expandImage(this)">
+            </div>
+
+            <div class="centertext">
+                <img class="game-media" src="/images/gamedetails/oot_stalfos.gif" alt="Stalfos">
+            </div>
+
+            <div class="centertext">
+                <img class="game-media" src="/images/gamedetails/oot_ironknuckle.gif" alt="IronKnuckle">
+            </div>
         </div>
 
-        <br>
-
-        <a class="gamesubtitle">Loot Tables:</a> Drawing from the game's data, I accurately replicated enemy drops and container items. The original game has many checks
-        that decide what can drop by checking the players health, magic, and ammunition. Using loot tables contained in .json files, I easily replicated this by checking
-        player health, experience levels, and scoreboards containing ammo.
-
         <br><br>
 
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/oot_loot.jpg" alt="Scrub">
-        </div>
-
-        <br>
-
-        <a class="gameheading">Enemies</a><br>
-        All enemies were designed modularly enabling them to be summoned anywhere in any environment provided the right conditions. Each enemy possesses unique attacks
-        and methods of being damaged using the items and weapons found throughout the journey.
-
-        <br><br>
-
-        <a class="gamesubtitle">Deku Scrubs/Octoroks:</a> These two enemies use projectiles of their own to attack the player. Using a shield the player can reflect
-        projectiles back to deal damage. They both will move down to safety if the player gets within melee range. While Octoroks die immediately upon being hit, Deku
-        scrubs will only be exposed and run around for a short period of time before returning to the ground. This is an opening for the player to get close and defeat it. 
-
-        <br><br>
-
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/oot_scrub.gif" alt="Scrub">
-        </div>
-        
-        <br>
-
-        <a class="gamesubtitle">Beamos:</a> Beamos are a unique, stationary enemy that requires the use of bombs to defeat, otherwise being invulnerable. The Beamos
-        will spin in circles until the player is in line of sight and shoot a laser as its attack is made by a ray cast. Once the beamos has sights on you, it will repeatedly
-        attack until you move out of range or destroy it. These enemies are not usually required to defeat if the player would prefer to sneak around them instead.
-
-        <br><br>
-
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/oot_beamos.gif" alt="Beamos">
-        </div>
-        
-        <br>
-
-        <a class="gamesubtitle">Stalfos/Lizalfos:</a> Stalfos and Lizalfos have their own unique attacking AI that is more advanced than the default minecraft mob AI.
-        They are capable of dodging in different directions and moving in ways that may be difficult to attack. The Stalfos has a shield which can also be used to defend.
-        The player can defeat it by timing their attacks well, but it is recommended to use items to stun them shown by blue particles which give you time to deal multiple
-        hits.
-
-        <br><br>
-
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/oot_stalfos.gif" alt="Stalfos">
-        </div>
-        
-        <br>
-
-        <a class="gamesubtitle">Iron Knuckle:</a> These enemies act as powerful tanks. They both have a ton of health and deal lots of damage. Attacking can be dangerous
-        because their attacks have much longer range and ranged attacks don't work on them. They have an attack that swings horizontally covering a lot of area and a vertical
-        attack that reaches even further in front. It is easiest to bait them into an attack and then strike as they are slow moving. After they are at half health, part of
-        their armor falls off and they become faster. Attacking now stuns them so it's possible to stun lock them until defeated.
-
-        <br><br>
-
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/oot_ironknuckle.gif" alt="IronKnuckle">
-        </div>
-        
-        <br>
-
-        <a class="gameheading">Bosses</a><br>
-        There are 10 bosses in the game created, not including minibosses. All of them have their own unique attack patterns and AI.
-
-        <br><br>
-
-        <a class="gamesubtitle">Ganon:</a> Ganon is the final boss of the game having the most advanced fight and animations. He is very large compared to the player with
-        his only weakness being his tail. The player has to dodge his two giant sword attacks to get around or run through the legs to get behind in order to attack. This
-        can be made easier by shooting projectiles at his head to stun momentarily. This is the only boss that isn't health based and is instead exactly 20 hits. There
-        are obstacles in the arena that the player can bait Ganon into and destroy which reveals extra health.
-
-        <br><br>
+        <a class="gamesubtitle">Ganon:</a> The final boss with advanced animations; requires 20 hits to defeat, emphasizing strategic movement and item usage.
 
         <div class="centertext">
             <img class="game-media" src="/images/gamedetails/oot_ganon.gif" alt="Ganon">
         </div>
         
-        <br>
-
-        <a class="gamesubtitle">Bongo Bongo:</a> An invisible being with disembodied hands. This boss fight is meant to disorient the player and force them to keep
-        track of many things at once such as attack patterns, player location, and ammo. Its hands are the main focus. They hit a giant drum that acts as the arena
-        causing the player to constantly fly into the air. The hands also have a range of attacks from swiping, slamming, punching, and grabbing. The player must
-        stun both hands with projectiles while dodging these attacks. Once both are stunned, the boss will charge in which leaves his eye open for an attack in order
-        to be defeated.
-
         <br><br>
+
+        <a class="gamesubtitle">Bongo Bongo:</a> A disorienting fight focusing on dodging and timing, requiring players to stun the hands to expose the main eye.
 
         <div class="centertext">
             <img class="game-media" src="/images/gamedetails/oot_bongobongo.gif" alt="BongoBongo">
         </div>
         
-        <br>
-
-        <a class="gamesubtitle">Volvagia:</a> Volvagia is a lengthy serpent-like dragon with three main attacks. Each segment of the
-        body acts independently of each other using an integer for each part to know what order it goes in. There are nine lava pits in the arena which act as
-        a game of whack-a-mole. If you don't attack in time, it will breathe fire on you. It can also fly in the air around you breathing fire in front of it.
-        Dodging the fire itself can be easy, but its long body can easily wrap around you making it hard to escape. Its final attack involves it flying up to the ceiling
-        and dropping fire rocks around you. Paying attention to where it is above makes it easy to dodge. During its two flying attacks you can actually deal damage
-        to the head with projectiles so that it isn't purely a waiting game.
-
         <br><br>
+
+        <a class="gamesubtitle">Volvagia:</a> A serpent-like dragon employing multi-segment attacks, requiring players to pay attention to its fire and movement.
 
         <div class="centertext">
             <img class="game-media" src="/images/gamedetails/oot_volvagia.gif" alt="Volvagia">
@@ -247,10 +162,9 @@
         
         <br><br>
 
-        <a class="gamesubtitle">Challenges:</a><br>        
-        • Inventory Management: The player travels through time making some but not all items in their inventory unusable. A mix of cloning inventory to containers like
-        shulker boxes and saving loading data with jukeboxes was used in order to effectively add, remove, and swap items while keeping any ammo the same as well.<br>
-        • Minecraft's engine is constantly updating as the project progresses requiring many mechanics to be revisited and updated.
+        <a class="gameheading">Challenges:</a><br>        
+        <a class="gamesubtitle">•</a>Time-travel mechanics were addressed by utilizing shulker boxes and data-saving techniques to maintain inventory consistency.<br>
+        <a class="gamesubtitle">•</a> Ongoing updates to Minecraft's engine require regular revisions and adjustments to game mechanics to ensure stability and functionality.
     </div>
 
     <br>
@@ -266,7 +180,7 @@
     <!-- Footer -->
     <footer>
         <footer-text class="float-left">
-            © 2023 By Alex Smith
+            © 2024 By Alex Smith
         </footer-text>
         
         <footer-text class="float-right">

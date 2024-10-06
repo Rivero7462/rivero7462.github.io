@@ -54,95 +54,62 @@
         <br><br>
 
         <a class="gamesubtitle">Overview:</a><br>        
-        <a style="color:rgb(86, 172, 52);">•</a> Designing a modular quest and dialog system.<br>
-        <a style="color:rgb(86, 172, 52);">•</a> Developing four science-based modules that cover STEM topics such as the solar system, physics, ecosystem, and the human body. <br>
-        <a style="color:rgb(86, 172, 52);">•</a> Utilizing the localization dashboard to effectively implement translations for dialog into the game.<br>
-        <a style="color:rgb(86, 172, 52);">•</a> Concepting and prototyping gameplay after brainstorming with professors from diverse academic backgrounds including linguistics, engineering, and english.<br>
+        <a style="color:rgb(86, 172, 52);">•</a> Modular quest and dialog systems.<br>
+        <a style="color:rgb(86, 172, 52);">•</a> Player photo-taking features.<br>
+        <a style="color:rgb(86, 172, 52);">•</a> Gameplay that covers STEM topics such as the solar system, physics, ecosystem, and the human body. <br>
+        <a style="color:rgb(86, 172, 52);">•</a> Concepting and prototyping gameplay after brainstorming with professors from diverse academic backgrounds.<br>
         
         <br><br>
 
         <a class="gameheading">Photo-taking Mechanics</a><br>
-        A basic photo taking mechanic was in place when I joined the project, but its functionality was limited and could only take photos of actors providing dialog
-        once. Lacking documentation and with little communication from the professor, I reverse-engineered the camera system in order to expand its functionality,
-        enabling it to integrate with quests and story progression.
-        
-        <br><br>
-
-        <a class="gamesubtitle">Camera:</a> The player can take photos of objects and items in the environment to receive dialog. The Camera is designed so that if there
-        are multiple actors of interest, it targets the closest object by comparing line traces. There are both quest and non-quest specific actors which can be
-        photographics at any time or just once. A modular component is added to an actor if it can be photographed making it easy to apply to any actor. This component also
-        stores the dialog upon taking the photo.
+        Enhanced the existing photo-taking mechanic by <a class="gamesubtitle">reverse-engineering</a> the camera system, enabling it to take photos of various
+        objects and characters in the environment, not just quest actors. It also implements a <a class="gamesubtitle">targeting system</a> that tracks all
+        photographed actors and identifies the closest one using line traces. A modular component is added to actors that can be photographed which stores
+        information like dialog.
 
         <br><br>
 
         <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/GorillaBay_Camera.gif" alt="WaterGif">
+            <img class="game-media" src="/images/gamedetails/GorillaBay_Camera.gif" alt="Camera" onclick="expandImage(this)">
         </div>
         
-        <br>
-
-        <a class="gameheading">Modular Quests</a><br>
-        To create meaningful gameplay that allows the player to take photos with a purpose, I developed a quest system. These quests guide players through the mechanics
-        of the game and take them on adventures designed to teach specific topics.
-
         <br><br>
 
-        <a class="gamesubtitle">Quest mechanics:</a> When starting a quest, I add all photo goals into an array for photo taking, easily accomplished using the pick
-        actor eyedropper. I made sure these quests can be resumed from where the player left off, saving the current quests state. When a photo of a quest objective
-        is taken, the game updates the counter and removes the actor from the quest. I included functionality to allow taking multiple pictures of the same objective
-        to review their descriptions if needed. These quest blueprints can be triggered with collision or activated manually like when completing a previous quest.
+        <a class="gameheading">Quest System Development</a><br>
+        A quest system was created for meaningful gameplay, guiding players through objectives tied to educational content. An <a class="gamesubtitle">actor array</a>
+        is used for tracking goals, enabling quest progress to be saved and resumed, and allowing pictures to be taken multiple times for further review.
+        <a class="gamesubtitle">Quest markers</a> were added to assist players in navigation, which toggle visibilty when entering photo-mode.
+        <a class="gamesubtitle">Interactables</a> are quest items that are not collected by taking photos, adding variety. They utilize the same base quest actor
+        framework so markers and dialog work the same.
+        
         <br><br>
 
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/GorillaBay_Quest.gif" alt="Quests">
+        <div class="game-image-grid">
+            <div class="centertext">
+                <img class="game-media" src="/images/gamedetails/GorillaBay_Quest.gif" alt="Quests" onclick="expandImage(this)">
+            </div>
+
+            <div class="centertext">
+                <img class="game-media" src="/images/gamedetails/GorillaBay_Markers.jpg" alt="Markers" onclick="expandImage(this)">
+            </div>
+
+            <div class="centertext">
+                <img class="game-media" src="/images/gamedetails/GorillaBay_Interactables.gif" alt="Interactables" onclick="expandImage(this)">
+            </div>
         </div>
         
-        <br>
-
-        <a class="gamesubtitle">Base Quest Actors:</a> I utilized a base for quest actors to add specific functionality to these blueprints. For example, I implemented
-        quest markers to prevent players from getting lost, ensuring they are visible from anywhere. These markers can be shown or hidden based on preference. Using
-        the base class, quest actors can also include moving AI for animals or animated objects.
-
         <br><br>
-
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/GorillaBay_Markers.jpg" alt="Markers">
-        </div>
-        
-        <br>
-
-        <a class="gamesubtitle">Interactables:</a> With photo-taking as the only mechanic, it was challenging to properly convey certain showcases and the gameplay
-        sometimes lacked variety. To address this, I extended the quest system to work with intractable elements like dialogue collisions and buttons. Using the same
-        base quest actor, I can still add markers above these interactables without needing to take a picture.
-
-        <br><br>
-
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/GorillaBay_Interactables.gif" alt="Interactibles">
-        </div>
-        
-        <br>
 
         <a class="gameheading">Character Customization</a><br>
-        My task when starting out was creating a simple, modular character customization pod to allow players to personalize their characters. Starting with the
-        base character, I categorized and separated each part of interest, such as facial features, clothing, and hair. By using consistent pivots on models, I
-        ensured that adding more models and cloth rigs in the future would be straightforward by providing a struct with arrays for each customization category.
-        In the demo I made a few basic options in order to properly showcase the ability to switch between components.
+        Programmed the <a class="gamesubtitle">character customization</a> pod allowing players to personalize their avatars. All features are categorized such as
+        hair, facial features, and clothing. By employing consistent pivots for future model integration, there is limitless customization potential.
 
         <br><br>
 
         <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/GorillaBay_Customization.gif" alt="Customization">
+            <img class="game-media" src="/images/gamedetails/GorillaBay_Customization.gif" alt="Customization" onclick="expandImage(this)">
         </div>
         
-        <br><br>
-
-        <a class="gameheading">Undergraduate Assistant to Independent Contractor</a><br>
-        REMOVE MOST OF THIS. Title seems promising, if you can spin it properly. The way it is now is too school related.
-        As an undergraduate research assistant, I initially assisted the game design professor who served as the Lead Developer. After my first year, he transitioned
-        to industry, and I continued to work on the project during the following year as the new professor settled in. For the majority of the project's development,
-        I served as the sole developer, which was a big role to fill. My contributions proved invaluable to the project and I was hired after my graduation Over the
-        summer, I completed a playable demo of the game for future developers to build upon and refugee learners to playtest.
         <br><br>
     </div>
 
@@ -157,7 +124,7 @@
     <!-- Footer -->
     <footer>
         <footer-text class="float-left">
-            © 2023 By Alex Smith
+            © 2024 By Alex Smith
         </footer-text>
         
         <footer-text class="float-right">
