@@ -11,6 +11,11 @@
         <script src="./script.js"></script>
     </head>
 <body class="home">
+    <!-- Modal for displaying expanded image -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="expandedImg">
+    </div>
 
     <!-- Header -->
     <div class="header">
@@ -43,215 +48,134 @@
     </div>
 
     <div class="gametextmargin">
-        Droplette is a cozy puzzle platformer where you use your abilities on the environment around you to save your captured friend.
+        Droplette: A cozy puzzle platformer where players use elemental abilities to manipulate the environment and rescue their captured friend.
 
         <br><br>
 
-        <a class="gamesubtitle">Responsibilities:</a><br>        
-        • Creating the players mobility and projectile mechanics for each of the four abilities.<br>
-        • Designing both modular and environment specific puzzles like weighable systems and anti-gravity ramps.<br>
-        • Collaborating with other designers to implement models, animations, and music.<br>
-        • Bug fixing player, gameplay, and boss mechanics to ensure a polished final product.<br>
-        • Integrating saving and loading systems with save files.<br>
-        • Shipping Windows, Linux, and Mac builds on Steam including achievements.<br>
+        <a class="gamesubtitle">Overview:</a><br>        
+        <a style="color:rgb(86, 172, 52);">•</a> Created player's movement and projectile features for four abilities.<br>
+        <a style="color:rgb(86, 172, 52);">•</a> Environmental puzzles such as weighable systems and anti-gravity ramps.<br>
+        <a style="color:rgb(86, 172, 52);">•</a> Collaborating with designers to implement gameplay, models, animations, and music.<br>
+        <a style="color:rgb(86, 172, 52);">•</a> Bug fixing player, gameplay, and boss AI.<br>
+        <a style="color:rgb(86, 172, 52);">•</a> Saving and loading integration with save files.<br>
+        <a style="color:rgb(86, 172, 52);">•</a> Windows, Linux, and Mac builds on shipped to Steam including achievements.<br>
         
         <br>
         <br>
 
-        <a class="gameheading">Player Ability Development:</a><br>
-        The initial concept centered on the player possessing four main abilities, all interacting with the environment in different ways. I wanted to encourage the
-        player to survey the area and determine the most effective ability for each situation, based on the unique functionalities of each power. A goal of mine was
-        to make sure each power had its own pros and cons so as not to make any one power feel more useful than another. The game is currently in early access but my
-        vision incorporates using a combinations of powers to solve puzzles as you permanently unlock them. The demo currently ends with unlocking mud first.
-        
-        <br><br>
+        <a class="gameheading">Player Abilities:</a><br>
+        Implemented the core movement and projectile mechanics for 4 distinct abilities. Each ability interacts uniquely with the environment,
+        encouraging players to experiment on the surroundings. <a class="gamesubtitle">Water</a> offers versatile mobility
+        through dashes and double jumps, while <a class="gamesubtitle">mud</a> emphasizes physics-based gameplay with a ball form. <a class="gamesubtitle">Ice</a>
+        slows down time to create precision-based puzzles and platforming. <a class="gamesubtitle">Cloud</a> introduces late-game traversal
+        by transforming the player into a projectile, with intangibility to navigate through relevant obstacles.
 
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_Abilities.jpg" alt="Powerups">
+        <br>
+        <br>
+
+        <div class="game-image-grid">
+            <div class="centertext">
+                <img class="game-media" src="/images/gamedetails/Droplette_Water.gif" alt="WaterGif" onclick="expandImage(this)">
+            </div>
+
+            <div class="centertext">
+                <img class="game-media" src="/images/gamedetails/Droplette_Mud.gif" alt="MudGif" onclick="expandImage(this)">
+            </div>
+
+            <div class="centertext">
+                <img class="game-media" src="/images/gamedetails/Droplette_Ice.gif" alt="IceGif" onclick="expandImage(this)">
+            </div>
+            
+            <div class="centertext">
+                <img class="game-media" src="/images/gamedetails/Droplette_Cloud.gif" alt="CloudGif" onclick="expandImage(this)">
+            </div>
         </div>
 
         <br>
-
-        Originally, I envisioned health and ammunition to be tied to the same meter. The player would have a limited number of projectiles, dashes, and double jumps,
-        creating a cohesive experience where resource management influenced gameplay. As the player used more water, they would become more vulnerable but gain other
-        benefits, such as increased mobility or the ability to fit into smaller spaces.<br>
-        The idea was scrapped because balancing this system proved challenging and restrictive. Even if executed well, it would put stress on the player by making
-        them focus on the limits more instead of just puzzle solving. I believe this method would work for a more level-based game but with the open world factor
-        of our game it just didn't work. It's a mechanic idea I would like to revisit.
-        
-        <br><br>
-
-        <a class="gamesubtitle">Water:</a> To not overwhelm the player, I wanted each elemental ability to be thematically similar. I accomplished this by making each
-        ability include a locomotion and projectile mechanic. I wanted water to be the main method of precise platforming and casually moving around the world which
-        is why I created a dash as the locomotion mechanic. The dash was designed with double jumping in mind, allowing for versatile combinations based on user preference.
-        It also gives an extra boost if dashes are timed well for speedrunners who like to optimize movement.
-
-        <br><br>
-
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_Water.gif" alt="WaterGif">
-        </div>
-        
-        <br>
-
-        <a class="gamesubtitle">Mud:</a> I wanted mud to be heavily physics-oriented. Mud would already feel slower than water without a dash mechanic, so I needed a way
-        to match that speed while still having its own unique properties. This led to the creation of mud ball. This is the mud powers locomotion ability which can roll
-        quickly and go even faster if momentum is gained down a slope. It also allows you to go through smaller spaces.
-        
-        <br><br>
-           
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_Mud.gif" alt="MudGif">
-        </div>
-        
-        <br>
-
-        <a class="gamesubtitle">Ice:</a> Ice power is primarily centered around time. While its locomotion power doesn't increase the player's movement, it does slow down
-        the world instead. By reducing the global time dilation and increasing the player's time dilation by the same factor, I was able to maintain the players speed 
-        while slowing down everything else. This provides me with opportunities to use this in puzzles where the player needs fast reaction time or to navigate across
-        fast moving objects.<br>
-        In order for timers and delays to work properly in the player, I developed a macro that calculates the time with the current dilation. Another unique trait of
-        ice is the ability to create platforms using its projectile. These projectiles can stick to wood and ice, transforming into platforms. Due to the projectiles
-        being made of ice I made sure you can shoot multiple at a time to create bridges and shapes.
-
-        <br><br>
-
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_Ice.gif" alt="IceGif">
-        </div>
-        
-        <br>
-
-        <a class="gamesubtitle">Cloud:</a> I wanted cloud to be the most unique and freeing power, as it is only fully unlock near the end of the game. With this power,
-        the player themselves become the projectile, enabling swift travel across the level and easy access to distant locations. Like water, cloud also has a double
-        jump and can be used after hitting a wall with projectile. This feature was added in as a correction mechanism so that the player didn't have to focus on being
-        fully precise in their aiming.<br>
-        For the locomotion power, it makes you intangible like a cloud, allowing you to pass through certain walls and gates like chain fences and wiring. This can be
-        used in combination with projectile to launch yourself through walls without hitting the ground.
-
-        <br><br>
-
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_Cloud.gif" alt="CloudGif">
-        </div>
-        
-        <br>
-
-        <a class="gameheading">Modular Mechanics</a><br>
-
-        <a class="gamesubtitle">Weighable Systems:</a> I wanted to include weight-based puzzles to use with mud. This modular mechanic could be used in various puzzles
-        to control moving platforms, clear obstructions, and interact with objects. They also serve as the primary method for damaging the boss. Initially, I used a
-        spline for the rope but it proved suboptimal since moving the spline points required constant mesh updates. I implemented cable components to achieve the same
-        effect, avoiding the complexity of spline paths.
-
-        <br><br>
-
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_Pulley.jpg" alt="Pulley">
-        </div>
-        
-        <br>
-
-        <a class="gamesubtitle">Pipes:</a> I developed a simple spline system blueprint for creating pipe mechanics with diverse functionality. The primary feature
-        involves suction, where the player can enter with mud ball and launch themselves in the air. I also made projectiles work with it for additional puzzle
-        potential and functionality. The suction can go both directions or only one with a simple bool check. It can also be turned off completely and the player
-        has full control inside as mud ball. Lastly, the pipe ends can be easily swapped to connect to other pipe splines to navigate through.
-
-        <br><br>
-
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_Pipes.jpg" alt="Pipes">
-        </div>
-        
-        <br>
-
-        <a class="gamesubtitle">Mud Ramps:</a> These anti-gravity ramps use a more complex spline path. A major challenge with the spline itself was getting the ramp
-        to transition from vertical to horizontal without the mesh rotation breaking. To address this, functionality was added based on roll rotation. Another
-        significant issue was the ramps anti-gravity properties. The mud ball, being a physics object, was intended to roll along the ramp with a gravity-like force
-        towards the hit points. Too many unknown variables made it difficult to consistently stick to the ramps surface.<br>
-        To resolve this, I implemented a switch between simulated physics and Unreal's floating pawn movement, which provided more consistent movement along the mud
-        ramp spline. Despite these improvements, certain mud ramps can be difficult to navigate along. It is something I plan to revisit and refine for the final release.
-
-        <br><br>
-
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_MudRamp.png" alt="MudRamp">
-        </div>
-        
-        <br>
-
-        <a class="gameheading">Boss</a><br>
-        Mud boss acts as the final test for the player, using what they've learned in order to defeat the boss and permanently obtain mud power. I could envision the
-        boss being a big jump in difficulty as it is also the first enemy encounter. I wanted to ease the player into the fight.<br>
-        By starting the player off as water, a majority of the boss' attacks are ineffective since they can be easily countered with water projectiles. Mud power is
-        needed in order to deal damage which means the player will have to actively dodge the attacks when they switch. I designed it this way to give the player plenty
-        of time to see how the boss fights and understand its moveset before deciding when they are ready to increase the difficulty by collecting the powerup.
-
-        <br><br>
-
-        The Mud Boss's hands transform into various attacks, which I intend for the player to use against him. Two of his four attacks provide opportunity to damage him
-        with the intention that if the player can't figure out one method, they still have an alternative. Through testing I observed that if people do not discover both
-        methods, the openings for an attack go from 50% to 25% leading to a waiting game.<br>
-        In future releases, I want to make the attacks more obvious on what to do. I also plan to make all attacks have methods of damaging him or at least guarantee a
-        way for the boss to do a specific attack.
-
-        <br><br>
-
-        <a class="gamesubtitle">Mud Hammer:</a> The objective in the fight is to weigh down the prominent crystals hanging above the boss. When the boss uses his hammer
-        attack, a mud ramp materializes, allowing the player to climb up and land on the boss with mud ball. This gives the player enough height to shoot the crystals
-        down manually.
-
-        <br><br>
-
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_Hammer.gif" alt="MudHammer">
-        </div>
-        
         <br>
         
-        <a class="gamesubtitle">Mud Suction:</a> Mud boss also turns his hands into pipes, creating suction that draws the player in and launches them into the crystals.
-        This mechanic serves as a punishment, but I designed it to hint at the fact that he shoots the crystals specifically. By shooting mud projectiles into his hands
-        before being sucked in, the boss will shoot these projectiles into the crystals weighing them down.
+        <a class="gameheading">Environmental Puzzles</a><br>
 
-        <br><br>
+        Environmental puzzles were designed to leverage the player's elemental abilities. A <a class="gamesubtitle">weighable system</a> used in pulleys and
+        unstable setpieces react to mud projectiles, calculating the mud quantity and adjusting for various positions. <a class="gamesubtitle">Anti-gravity ramps</a>
+        use splines for flexibility. They utilize floating pawn movement to attach the player to a ramp's surface, reverting to physics when detached.
+        <a class="gamesubtitle">Pipes</a> also use a splines for flexibility, featuring adjustable variables that control suction, and its intensity. During suction,
+        it takes in projectiles or the player's mud ball form and shoots them out of the other end, creating momentum and time-based puzzles; additionally, they
+        serve as an engaging and dynamic means of movement.
 
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_Suction.gif" alt="MudSuction">
-        </div>
-        
+        <br>
         <br>
 
-        <a class="gamesubtitle">Mud Projectiles and Mud Walls:</a> His other attacks involve shooting heat seeking mud projectiles and mud walls that damage the player
-        on being hit.
+        <div class="game-image-grid">
+            <div class="centertext">
+                <img class="game-media" src="/images/gamedetails/Droplette_Pulley.gif" alt="Pulley" onclick="expandImage(this)">
+            </div>
 
-        <br><br>
+            <div class="centertext">
+                <img class="game-media" src="/images/gamedetails/Droplette_MudRamp.gif" alt="MudRamp" onclick="expandImage(this)">
+            </div>
 
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_MudWalls.gif" alt="MudWalls">
-        </div>
-        
-        <br>
-
-        <div class="centertext">
-            <img class="game-media" src="/images/gamedetails/Droplette_BossProjectile.gif" alt="MudProjectile">
+            <div class="centertext">
+                <img class="game-media" src="/images/gamedetails/Droplette_Pipes.gif" alt="Pipes" onclick="expandImage(this)">
+            </div>
         </div>
         
         <br><br>
 
-        <a class="gamesubtitle">Additional Content:</a><br>        
-        As someone who enjoys 100% completing games and cheat codes, I wanted to provide additional content for player's who share these interests. There are four parkour
-        time trial levels that can be unlocked by solving puzzles which give you extra health when completed. There are also extras and cheats hidden throughout
-        the levels which unlock cosmetics and game breaking features.<br>
-        To preserve the integrity of the first playthrough, the player must first complete the main game or start a new game+ where they keep their collectibles. Some
-        cheats include infinite jumping and dashing, A turbo button that accelerates the game similar to an emulator, and a remove all barriers option allowing you
-        to explore out of bounds in the levels.
+        <a class="gameheading">Boss Mechanics</a><br>
+        The Mud Boss serves as a final test for players, featuring attacks that strategically challenge the use of the mud ability. These attacks are
+        designed to offer counterattack opportunities ensuring players can use various methods to defeat it for replayability. The fight incorporates
+        the fundamentals from previous puzzles to show the players wisdom and growth.
+        
+        <br><br>
+        
+        His <a class="gamesubtitle">hammer attack</a> when dodged, spawns a mud ramp spline allowing access on top of the boss to attack.
+        
+        <div class="centertext">
+            <img class="game-media" src="/images/gamedetails/Droplette_Hammer.gif" alt="MudHammer" onclick="expandImage(this)">
+        </div>
+
+        <br><br>
+
+        <a class="gamesubtitle">Mud suction</a> works like a giant suction pipe which sucks the player in to deal a drop of damage. Shooting mud projectiles
+        before getting sucked in damages the boss.
+
+        <div class="centertext">
+            <img class="game-media" src="/images/gamedetails/Droplette_Suction.gif" alt="MudSuction" onclick="expandImage(this)">
+        </div>
+
+        <br><br>
+
+        The boss also shoots <a class="gamesubtitle">mud projectiles</a> and <a class="gamesubtitle">mud walls</a> which damage the player on contact. The player
+        can dodge or shoot them with water.
+
+        <div class="game-image-grid">
+            <div class="centertext">
+                <img class="game-media" src="/images/gamedetails/Droplette_MudWalls.gif" alt="MudWalls" onclick="expandImage(this)">
+            </div>
+
+            <div class="centertext">
+                <img class="game-media" src="/images/gamedetails/Droplette_BossProjectile.gif" alt="MudProjectile" onclick="expandImage(this)">
+            </div>
+        </div>
+        
+        <br><br>
+
+        <a class="gamesubtitle">Additional Features:</a><br>        
+        To enhance replayability, post-game content was developed. This includes time trials, hidden collectibles, and unlockable cheats like
+        infinite jumping which can be brought into a new save for NewGame+. These features cater to completionist players, providing additional
+        layers of challenge and exploration.
+
+        <br><br>
+
+        <div>
+            <iframe style="width:51vw; height:10vw;" src="https://store.steampowered.com/widget/2745370/" frameborder="0"></iframe>
+        </div>
+
+        Recruiters contact <a href="/about.html">me</a> for copy of game or access to GitHub repository to see skillset.
     </div>
 
-    <br>
-
-    <div class="centertext">
-        <iframe style="width:51vw; height:15vw;" src="https://store.steampowered.com/widget/2745370/" frameborder="0"></iframe>
-    </div>
+    <br><br>
 
     <!-- Footer -->
     <footer>

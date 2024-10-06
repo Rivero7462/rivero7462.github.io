@@ -75,8 +75,6 @@
     color:gray
     }
 
-
-
 .videocontainer {
     display: flex;
     justify-content: center;
@@ -232,10 +230,11 @@ redtext{
     margin-left:25%;
     margin-right:25%;
     font-size:.9vw;
+    line-height:1.4vw;
 }
 
 .gamesubtitle{
-    color:rgb(105, 138, 92);
+    color:rgb(86, 172, 52);
     font-weight:600;
     font-size:1vw;
 }
@@ -248,8 +247,9 @@ redtext{
 
 .game-media{
     border-radius:10px;
-    width:32vw;
+    width:20vw;
     max-height:18vw;
+    cursor: pointer;
 }
 
 .downloadbutton{
@@ -269,6 +269,41 @@ redtext{
     font-style:normal;
     font-size:3vw;
     color:black;
+}
+
+.game-image-grid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    width: 43vw;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /*Media*/

@@ -7,3 +7,15 @@ function myFunction() {
     x.style.display = "grid";
   }
 };
+
+function expandImage(img) {
+  const modal = document.getElementById("imageModal");
+  const expandedImg = document.getElementById("expandedImg");
+  modal.style.display = "flex"; // Show the modal
+  expandedImg.src = img.src; // Set the source of the expanded image
+}
+
+function closeModal() {
+  const modal = document.getElementById("imageModal");
+  modal.style.display = "none"; // Hide the modal
+}
