@@ -90,6 +90,20 @@
     z-index:-2;
 }
 
+.home-links{
+    color: aliceblue;
+    width:8vw;
+    height:8vw;
+}
+
+.home-link-left{
+    padding-right:7vw;
+}
+
+.home-link-right{
+    padding-left:7vw;
+}
+
 .titletext{
     text-align:center;
     font-weight:600;
