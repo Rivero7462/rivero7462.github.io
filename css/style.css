@@ -75,6 +75,25 @@
     color:gray
     }
 
+.emailcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-icon {
+    width: 2em; /* Matches the font size of the text */
+    height: 2em;
+    margin-right: 0.5em; /* Adds some space between the icon and the text */
+    vertical-align: middle; /* Aligns the icon with the middle of the text */
+}
+
+.email-link{
+    color: aliceblue;
+    width:1vw;
+    height:1vw;
+}
+
 .videocontainer {
     display: flex;
     justify-content: center;
@@ -92,7 +111,7 @@
 
 .home-links{
     color: aliceblue;
-    width:8vw;
+    width:9vw;
     height:8vw;
 }
 
@@ -125,8 +144,8 @@
 }
 
 .titletext-occupation{
-    font-size:3vw;
-    -webkit-text-stroke-width:.1vw;
+    font-size:3.5vw;
+    -webkit-text-stroke-width:.14vw;
 }
 
 /*Segment*/
